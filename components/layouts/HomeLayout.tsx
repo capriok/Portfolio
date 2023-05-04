@@ -6,8 +6,8 @@ import Stars from "@components/Stars"
 import Switch from "@components/Switch"
 import Header from "@components/Header"
 
-import styles from "@styles/components/layouts.module.scss"
-import "@styles/index.scss"
+// import styles from "@styles/components/layouts.module.scss"
+import styles from "@styles/index"
 
 const Layout = ({ children }) => {
   const [dir, setDir] = useState<string>("top")
@@ -71,12 +71,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Switch isMobile={isMobile} theme={theme} setTheme={setTheme} />
-      <Stars />
+      {/* <Switch isMobile={isMobile} theme={theme} setTheme={setTheme} />
+      <Stars /> */}
       <Header dir={dir} pos={pos} atHome={atHome} isMobile={isMobile} />
-      <div className={styles.homeLayout}>
+      <div className={styles.layouts.home.root}>
         <main>{children}</main>
-        <footer className={styles.homeFooter}>
+        <footer className={styles.layouts.home.footer}>
           <p>Built by Kyle Caprio | {new Date().getFullYear()}</p>
         </footer>
       </div>

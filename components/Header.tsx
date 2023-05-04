@@ -1,7 +1,8 @@
 import React from "react"
 import Link from "next/link"
 
-import styles from "@styles/components/header.module.scss"
+// import styles from "@styles/components/header.module.scss"
+import styles from "@styles/index"
 
 interface Props {
   dir?: string
@@ -11,42 +12,44 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ dir, pos = 0, atHome, isMobile }) => {
-  function headerClass(): string {
-    const classes = {
-      fill: ` ${styles.fill}`,
-      hide: ` ${styles.hide}`,
-      show: ` ${styles.show}`,
-    }
+  function makeClass(): string {
+    // const classes = {
+    //   fill: ` ${styles.fill}`,
+    //   hide: ` ${styles.hide}`,
+    //   show: ` ${styles.show}`,
+    // }
 
-    let cns = styles.homeHeader
-    if (isMobile || pos >= 300) cns += classes.fill
-    if (!atHome && pos > 0) cns += classes.fill
+    // let cns = styles.homeHeader
+    // if (isMobile || pos >= 300) cns += classes.fill
+    // if (!atHome && pos > 0) cns += classes.fill
 
-    switch (dir) {
-      case "down":
-        cns += classes.hide
-      case "up":
-        cns += classes.show
-      case "top":
-        cns
-      default:
-        break
-    }
-    return cns
+    // switch (dir) {
+    //   case "down":
+    //     cns += classes.hide
+    //   case "up":
+    //     cns += classes.show
+    //   case "top":
+    //     cns
+    //   default:
+    //     break
+    // }
+    // return cns
+    return styles.header.root
   }
+  const headerCn = makeClass()
 
   return (
-    <header className={headerClass()}>
-      <div className={styles.headCont}>
+    <header className={headerCn}>
+      <div className={styles.header.content.root}>
         <Link passHref href="/">
-          <h1 className={styles.title}>KC</h1>
+          <h1 className={styles.header.content.title}>KC</h1>
         </Link>
-        <div className={styles.navs}>
+        <div className={styles.header.content.navigation}>
           <Link passHref href="/about">
-            <span className={styles.mono}>About</span>
+            <span className={styles.global.font.mono}>About</span>
           </Link>
           <Link passHref href="/work">
-            <span className={styles.mono}>Work</span>
+            <span className={styles.global.font.mono}>Work</span>
           </Link>
           <Link
             passHref
@@ -54,10 +57,10 @@ const Header: React.FC<Props> = ({ dir, pos = 0, atHome, isMobile }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className={styles.mono}>Contact</span>
+            <span className={styles.global.font.mono}>Contact</span>
           </Link>
           <Link passHref href="/resume">
-            <span className={styles.mono}>Resume</span>
+            <span className={styles.global.font.mono}>Resume</span>
           </Link>
         </div>
       </div>
