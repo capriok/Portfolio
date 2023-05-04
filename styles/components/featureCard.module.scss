@@ -3,7 +3,7 @@
 $overlay-opacity: 0.2;
 $image-width: 450px;
 
-.featureAnim {
+.cardWrapper {
   position: relative;
   z-index: 1;
   flex: 1;
@@ -78,16 +78,18 @@ $image-width: 450px;
           margin-left: 20px;
         }
       }
-      .navigation {
-        font-size: 1.6rem;
+      .foot {
+        display: flex;
+        font-size: 1.5rem;
+        transition: 0.2s;
+        margin: 0;
+        margin-left: 10px;
         a {
-          transition: 0.2s;
-          &:hover {
-            transition: 0.2s;
-            color: steelblue;
-          }
           &:first-child {
             margin-right: 10px;
+          }
+          &:hover {
+            color: steelblue;
           }
         }
       }
@@ -105,8 +107,10 @@ $image-width: 450px;
         position: relative;
         overflow: hidden;
         flex: 1;
-        height: 240px;
         border-radius: 5px;
+        img {
+          height: 240px !important;
+        }
         .overlay {
           z-index: 1;
           position: absolute;

@@ -1,10 +1,9 @@
 @import "../index.scss";
 
-.cardAnimation {
+.cardWrapper {
   flex: 1;
   @include flex;
   align-items: stretch;
-
   transition: 0.2s;
 
   min-width: 30%;
@@ -44,7 +43,6 @@
       justify-content: space-between;
       width: 100%;
       padding-bottom: 20px;
-      transition: 0.2s;
       @include media("<=550") {
         padding-bottom: 15px;
       }
@@ -53,6 +51,8 @@
       }
       .cardTitle {
         flex: 1;
+      }
+      .cardFolder {
         text-align: right;
       }
     }
@@ -71,14 +71,14 @@
       }
     }
     .foot {
+      display: flex;
       font-size: 1.5rem;
-      width: 100%;
       align-self: flex-end;
       text-align: right;
       transition: 0.2s;
+      margin: 0;
+      margin-left: 10px;
       a {
-        margin: 0;
-        margin-left: 10px;
         &:hover {
           color: steelblue;
         }
@@ -91,8 +91,6 @@
       margin: 0;
       transition: 0.2s;
     }
-    .folderClosed {
-    }
     .folderOpen {
       display: none;
       padding-left: 1px;
@@ -101,14 +99,12 @@
       background-color: $app-background;
       .head {
         transition: 0.2s;
-        .cardTitle {
-          margin-right: 10px;
-        }
       }
 
       .folderOpen {
         display: block;
-        margin-left: 0 !important;
+        margin-right: -1px !important;
+        text-align: center;
         color: steelblue !important;
       }
       .folderClosed {

@@ -13,28 +13,34 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.head}>
-        <Link passHref href={`/${project.slug}`}>
-          <h3 className={styles.cardTitle}>{project.title}</h3>
-        </Link>
-        <div className={styles.folderClosed}>
-          <AiOutlineFolder />
+    <div className={styles.cardWrapper}>
+      <div className={styles.card}>
+        <div className={styles.head}>
+          <h3 className={styles.cardTitle}>
+            <Link passHref href={`/${project.slug}`}>
+              {project.title}
+            </Link>
+          </h3>
+          <div className={styles.cardFolder}>
+            <div className={styles.folderClosed}>
+              <AiOutlineFolder />
+            </div>
+            <div className={styles.folderOpen}>
+              <AiOutlineFolderOpen />
+            </div>
+          </div>
         </div>
-        <div className={styles.folderOpen}>
-          <AiOutlineFolderOpen />
+        <div className={styles.description}>
+          <p>{project.description}</p>
         </div>
-      </div>
-      <div className={styles.description}>
-        <p>{project.description}</p>
-      </div>
-      <div className={styles.foot}>
-        <Link passHref href={`${project.source}`} target="_blank" rel="noreferrer">
-          <AiFillGithub />
-        </Link>
-        <Link passHref href={`${project.demo}`} target="_blank" rel="noreferrer">
-          <RiExternalLinkFill />
-        </Link>
+        <div className={styles.foot}>
+          <Link passHref href={`${project.source}`} target="_blank" rel="noreferrer">
+            <AiFillGithub />
+          </Link>
+          <Link passHref href={`${project.demo}`} target="_blank" rel="noreferrer">
+            <RiExternalLinkFill />
+          </Link>
+        </div>
       </div>
     </div>
   )

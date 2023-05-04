@@ -7,6 +7,7 @@ import Switch from "@components/Switch"
 import Header from "@components/Header"
 
 import styles from "@styles/components/layouts.module.scss"
+import "@styles/index.scss"
 
 const Layout = ({ children }) => {
   const [dir, setDir] = useState<string>("top")

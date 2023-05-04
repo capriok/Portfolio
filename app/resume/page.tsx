@@ -1,3 +1,4 @@
+"use client"
 import SEO from "@components/Seo"
 import React from "react"
 import Layout from "@components/layouts/ResumeLayout"
@@ -15,11 +16,11 @@ const Resume: React.FC = () => (
           Resume
         </object>
       </div>
-      <div className={styles.resumeMobile}>
+      {/* <div className={styles.resumeMobile}>
         <button className={styles.resumeBtn} onClick={() => window.open(PrimaryPDF)}>
           View Resume
         </button>
-      </div>
+      </div> */}
     </Layout>
   </>
 )
