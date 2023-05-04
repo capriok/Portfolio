@@ -4,8 +4,6 @@ import React, { useState } from "react"
 import { MdExpandMore, MdExpandLess } from "react-icons/md"
 import ProjectCard from "@components/ProjectCard"
 
-import styles from "@styles/components/sections/projectMap.module.scss"
-
 import featuresJson from "@json/features.json"
 import projectsJson from "@json/projects.json"
 
@@ -25,15 +23,15 @@ const ProjectMap: React.FC = () => {
   })
 
   return (
-    <div className={styles.projectMapSection}>
-      <h1 className={styles.sectionTitle}>Project Collection</h1>
-      <div className={styles.cardCont}>
+    <div className="section project-list">
+      <h1 className="section-title">Project Collection</h1>
+      <div className="project-cards">
         {projects.slice(0, atHome ? pg : projects.length).map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
       {atHome && (
-        <div className={styles.buttonCont}>
+        <div className="project-list-controls">
           {pg > 6 && (
             <button onClick={() => setPg(pg - 3)}>
               <MdExpandLess />

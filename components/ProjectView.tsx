@@ -28,14 +28,14 @@ const ProjectView: React.FC<Props> = ({ project }) => {
       <hr />
       {project.writing.process && (
         <>
-          <h2>The Process</h2>
+          <h1>The Process</h1>
           <p className={styles.process}>{project.writing.process}</p>
           <p className={styles.process}>{project.writing.processSub}</p>
         </>
       )}
       {project.writing.conclusion.length > 0 && (
         <>
-          <h2>Take Aways</h2>
+          <h1>Take Aways</h1>
           <ul>
             {project.writing.conclusion.map((conclusion, i) => (
               <li key={i}>{conclusion}</li>
@@ -43,7 +43,7 @@ const ProjectView: React.FC<Props> = ({ project }) => {
           </ul>
         </>
       )}
-      <h2>Technology stack</h2>
+      <h1>Technology stack</h1>
       <ul>
         {project.stack.map((stack, i) => (
           <li key={i}>{stack}</li>
@@ -51,7 +51,7 @@ const ProjectView: React.FC<Props> = ({ project }) => {
       </ul>
       {project.resources.length > 0 && (
         <>
-          <h2>Resources</h2>
+          <h1>Resources</h1>
           <ul>
             {project.resources.map((resource, i) => (
               <li key={i}>
@@ -63,7 +63,7 @@ const ProjectView: React.FC<Props> = ({ project }) => {
           </ul>
         </>
       )}
-      <h2>Links</h2>
+      <h1>Links</h1>
       <div className={styles.links}>
         <Link passHref href="/" className={styles.link}>
           <p>

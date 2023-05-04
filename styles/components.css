@@ -1,0 +1,50 @@
+@import "./components/about.css";
+@import "./components/sections/introduction.css";
+@import "./components/sections/projects.css";
+
+@layer components {
+  .layout {
+    @apply w-full max-w-[1000px] transition-all delay-200 mx-auto my-0;
+  }
+  .layout-footer {
+    @apply h-[50px] flex justify-center align-middle mt-auto;
+  }
+  .resume-layout {
+    @apply w-full h-[calc(100vh-100px)] transition-all delay-200 mx-auto my-0;
+  }
+  .resume {
+    @apply hidden md:visible;
+  }
+  .resume-mobile {
+    @apply flex justify-center mt-10;
+  }
+  .resume-cta {
+    @apply text-center px-6 py-2 text-lg;
+  }
+
+  .page {
+    @apply mb-8;
+  }
+  .section {
+    @apply mb-[75px] md:mb-[125px] transition-all delay-200;
+  }
+  .section-title {
+    @apply text-4xl font-bold mb-4;
+  }
+
+  .header {
+    @apply z-50 sticky select-none top-0 w-full h-[100px] flex justify-between items-center px-4 bg-transparent;
+  }
+  .header-content {
+    @apply flex justify-between w-full max-w-[1000px] mx-auto p-0;
+  }
+  .header-navigation {
+    @apply flex;
+  }
+  .header-nav-item {
+    @apply flex ml-4;
+  }
+  .header-title {
+    @apply cursor-pointer m-0 text-3xl font-bold;
+  }
+}

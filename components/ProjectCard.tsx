@@ -17,11 +17,11 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
     <div className={styles.cardWrapper}>
       <div className={styles.card}>
         <div className={styles.head}>
-          <h3 className={styles.cardTitle}>
+          <h1 className={styles.cardTitle}>
             <Link passHref href={`/${project.slug}`}>
               {project.title}
             </Link>
-          </h3>
+          </h1>
           <div className={styles.cardFolder}>
             <div className={styles.folderClosed}>
               <AiOutlineFolder />

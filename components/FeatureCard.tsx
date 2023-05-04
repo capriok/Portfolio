@@ -32,7 +32,7 @@ const FeaturedCard: React.FC<Props> = ({ project, index }) => {
         <div className={styles.contentCont}>
           <h5 className={styles.mono}>Featured Project</h5>
           <Link passHref href={`/${project.slug}`}>
-            <h2>{project.title}</h2>
+            <h1>{project.title}</h1>
           </Link>
           <p className={styles.descriptionCont}>{project.description}</p>
           <div className={styles.tags}>

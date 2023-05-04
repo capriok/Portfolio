@@ -1,32 +1,23 @@
 "use client"
+import "@styles/globals.css"
+
+export const metadata = {
+  title: "Kyle Caprio | Portfolio",
+  description: "Software Engineer",
+}
+
 import React, { useState, useEffect } from "react"
 import { useScrollDirection } from "react-hooks-lab"
 
 import Stars from "@components/Stars"
-import Switch from "@components/Switch"
 import Header from "@components/Header"
 
-// import styles from "@styles/components/layouts.module.scss"
-
-const Layout = ({ children }) => {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [dir, setDir] = useState<string>("top")
   const [pos, setPos] = useState<number>(0)
 
-  const [theme, setTheme] = useState<ThemeState>({ bright: true, night: false })
-
   const scrollingDir = useScrollDirection()
 
-  const value = (v) => {
-    theme.bright
-      ? document.documentElement.style.setProperty(
-          "--star-color",
-          `rgba(70, 131, 180, ${v})`
-        )
-      : document.documentElement.style.setProperty(
-          "--star-color",
-          `rgba(255, 255, 255, ${v})`
-        )
-  }
   let atHome
   let isMobile
   if (typeof window !== `undefined`) {
@@ -48,18 +39,6 @@ const Layout = ({ children }) => {
     }
   }, [])
 
-  useEffect(() => {
-    if (pos > 500) value(0.3)
-    if (pos <= 500) value(0.4)
-    if (pos <= 400) value(0.5)
-    if (pos <= 300) value(0.6)
-    if (pos <= 200) value(0.7)
-    if (pos <= 100) value(0.8)
-
-    if (!atHome) return value(0.3)
-    if (isMobile) return value(0.2)
-  }, [pos, theme])
-
   function handleScroll() {
     let position
     if (typeof window !== `undefined`) {
@@ -70,8 +49,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Switch isMobile={isMobile} theme={theme} setTheme={setTheme} />
-      <Stars /> */}
+      <Stars />
       <Header dir={dir} pos={pos} atHome={atHome} isMobile={isMobile} />
       <div className="layout">
         <main>{children}</main>
@@ -82,5 +60,3 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-export default Layout
