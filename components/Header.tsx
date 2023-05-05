@@ -1,7 +1,4 @@
-import React from "react"
 import Link from "next/link"
-
-// import styles from "@styles/components/header.module.scss"
 
 interface Props {
   dir?: string
@@ -10,7 +7,7 @@ interface Props {
   isMobile?: boolean
 }
 
-const Header: React.FC<Props> = ({ dir, pos = 0, atHome, isMobile }) => {
+export default function Header({ dir, pos = 0, atHome, isMobile }: Props) {
   // function makeClass(): string {
   // const classes = {
   //   fill: ` ${styles.fill}`,
@@ -63,5 +60,3 @@ const Header: React.FC<Props> = ({ dir, pos = 0, atHome, isMobile }) => {
     </header>
   )
 }
-
-export default Header

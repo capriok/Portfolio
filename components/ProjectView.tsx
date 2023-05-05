@@ -14,7 +14,7 @@ interface Props {
   project: Project
 }
 
-const ProjectView: React.FC<Props> = ({ project }) => {
+function ProjectView({ project }: Props) {
   const [viewState, setView] = useState<ViewState>({ open: false, image: 0 })
 
   return (

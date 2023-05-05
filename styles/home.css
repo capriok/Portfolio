@@ -1,3 +1,6 @@
+.section {
+  @apply mb-[75px] md:mb-[125px] transition-all delay-200;
+}
 .introduction-section {
   @apply grid place-items-center w-full h-[calc(100vh-100px)];
 }

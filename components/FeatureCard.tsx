@@ -13,7 +13,7 @@ interface Props {
   index: number
 }
 
-const FeaturedCard: React.FC<Props> = ({ project, index }) => {
+export default function FeaturedCard({ project, index }: Props) {
   return (
     <div className={styles.cardWrapper}>
       <div
@@ -55,5 +55,3 @@ const FeaturedCard: React.FC<Props> = ({ project, index }) => {
     </div>
   )
 }
-
-export default FeaturedCard

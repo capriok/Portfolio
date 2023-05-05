@@ -1,13 +1,13 @@
 "use client"
 import React, { useState } from "react"
 
-import { MdExpandMore, MdExpandLess } from "react-icons/md"
-import ProjectCard from "@components/ProjectCard"
-
 import featuresJson from "@json/features.json"
 import projectsJson from "@json/projects.json"
 
-const ProjectMap: React.FC = () => {
+import { MdExpandMore, MdExpandLess } from "react-icons/md"
+import ProjectCard from "@components/ProjectCard"
+
+export default function ProjectMap() {
   const [pg, setPg] = useState<number>(6)
 
   let atHome
@@ -47,5 +47,3 @@ const ProjectMap: React.FC = () => {
     </div>
   )
 }
-
-export default ProjectMap

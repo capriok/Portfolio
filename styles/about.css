@@ -1,8 +1,5 @@
-.about-page {
-  @apply w-full mt-10;
-}
 .about-content {
-  @apply w-full max-w-[800px] h-full mx-auto my-0 mb-10;
+  @apply w-full max-w-[800px] mx-auto my-0 mb-10;
 }
 
 .about-info-indent {
@@ -12,7 +9,7 @@
   @apply text-2xl font-bold my-4;
 }
 .about-info-item {
-  @apply mb-4;
+  @apply mx-2 my-6;
 }
 .about-info-time {
   @apply text-neutral-800;

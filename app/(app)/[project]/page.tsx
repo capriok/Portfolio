@@ -1,10 +1,5 @@
-import React from "react"
-import SEO from "@components/Seo"
-
-import projects from "@json/projects.json"
-
-import Layout from "@components/layouts/HomeLayout"
 import ProjectView from "@components/ProjectView"
+import projects from "@json/projects.json"
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -12,15 +7,10 @@ export async function generateStaticParams() {
   }))
 }
 
-const ProjectTemplate: React.FC<{ params: { [key: string]: string } }> = ({ params }) => {
+function ProjectTemplate({ params }: { params: { project: string } }) {
   const project = projects.find((p) => p.slug === params.project)!
 
-  return (
-    <Layout>
-      <SEO title={project.title} />
-      <ProjectView project={project} />
-    </Layout>
-  )
+  return <ProjectView project={project} />
 }
 
 export default ProjectTemplate

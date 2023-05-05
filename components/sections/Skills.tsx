@@ -30,7 +30,7 @@ import { RiHtml5Line, RiCss3Fill } from "react-icons/ri"
 import { VscDatabase } from "react-icons/vsc"
 import { FaJava } from "react-icons/fa"
 
-const Skills: React.FC = () => {
+export default function Skills() {
   const [tab, setTab] = useState<object>({ b: true })
 
   const Tab = ({ children, t }) => (
@@ -128,5 +128,3 @@ const Skills: React.FC = () => {
     </div>
   )
 }
-
-export default Skills

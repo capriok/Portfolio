@@ -11,7 +11,7 @@ interface Props {
   set: SetViewState
 }
 
-const FullView: React.FC<Props> = ({ images, view, set }) => {
+export default function FullView({ images, view, set }: Props) {
   const first = 0
   const last = images.length - 1
   let windowWidth
@@ -92,5 +92,3 @@ const FullView: React.FC<Props> = ({ images, view, set }) => {
     </>
   )
 }
-
-export default FullView

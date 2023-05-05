@@ -13,7 +13,7 @@ interface Props {
   set: SetViewState
 }
 
-const Carousel: React.FC<Props> = ({ images, set }) => {
+export default function Carousel({ images, set }: Props) {
   let ref: any = useRef()
 
   let isMobile
@@ -60,5 +60,3 @@ const Carousel: React.FC<Props> = ({ images, set }) => {
     </div>
   )
 }
-
-export default Carousel

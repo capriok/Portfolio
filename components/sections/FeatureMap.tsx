@@ -1,12 +1,11 @@
 "use client"
-import React from "react"
 import featuresData from "@json/features.json"
 
 import FeaturedCard from "@components/FeatureCard"
 
 import styles from "@styles/components/sections/featureMap.module.scss"
 
-const FeatureMap: React.FC = () => {
+export default function FeatureMap() {
   let features: Array<Feature> = featuresData
 
   return (
@@ -18,5 +17,3 @@ const FeatureMap: React.FC = () => {
     </div>
   )
 }
-
-export default FeatureMap

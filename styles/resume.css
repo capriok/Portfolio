@@ -1,0 +1,9 @@
+.resume {
+  @apply hidden md:block;
+}
+.resume-mobile {
+  @apply md:hidden flex justify-center mt-10;
+}
+.resume-cta {
+  @apply text-center px-6 py-2 text-lg;
+}

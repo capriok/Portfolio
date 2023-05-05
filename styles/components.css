@@ -1,10 +1,11 @@
-@import "./components/about.css";
-@import "./components/sections/introduction.css";
-@import "./components/sections/projects.css";
+@import "./home.css";
+@import "./about.css";
+@import "./resume.css";
+@import "./projects.css";
 
 @layer components {
   .layout {
-    @apply w-full max-w-[1000px] transition-all delay-200 mx-auto my-0;
+    @apply w-full max-w-[1000px] transition-all delay-200 mx-auto my-0 px-6 md:p-0;
   }
   .layout-footer {
     @apply h-[50px] flex justify-center align-middle mt-auto;
@@ -12,24 +13,9 @@
   .resume-layout {
     @apply w-full h-[calc(100vh-100px)] transition-all delay-200 mx-auto my-0;
   }
-  .resume {
-    @apply hidden md:visible;
-  }
-  .resume-mobile {
-    @apply flex justify-center mt-10;
-  }
-  .resume-cta {
-    @apply text-center px-6 py-2 text-lg;
-  }
 
-  .page {
-    @apply mb-8;
-  }
-  .section {
-    @apply mb-[75px] md:mb-[125px] transition-all delay-200;
-  }
   .section-title {
-    @apply text-4xl font-bold mb-4;
+    @apply text-4xl font-bold my-4;
   }
 
   .header {

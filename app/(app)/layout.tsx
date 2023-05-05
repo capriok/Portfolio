@@ -9,7 +9,6 @@ export const metadata = {
 import React, { useState, useEffect } from "react"
 import { useScrollDirection } from "react-hooks-lab"
 
-import Stars from "@components/Stars"
 import Header from "@components/Header"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -49,7 +48,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <>
-      <Stars />
       <Header dir={dir} pos={pos} atHome={atHome} isMobile={isMobile} />
       <div className="layout">
         <main>{children}</main>

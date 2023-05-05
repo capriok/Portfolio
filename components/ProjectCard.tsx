@@ -1,5 +1,4 @@
 "use client"
-import React from "react"
 import Link from "next/link"
 
 import { AiOutlineFolder, AiOutlineFolderOpen } from "react-icons/ai"
@@ -12,7 +11,7 @@ interface Props {
   project: Project
 }
 
-const ProjectCard: React.FC<Props> = ({ project }) => {
+function ProjectCard({ project }: Props) {
   return (
     <div className={styles.cardWrapper}>
       <div className={styles.card}>
