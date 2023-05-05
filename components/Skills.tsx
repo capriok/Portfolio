@@ -1,8 +1,6 @@
 "use client"
 import React, { useState } from "react"
 
-import styles from "@styles/skills.module.scss"
-
 import {
   SiJavascript,
   SiTypescript,
@@ -35,7 +33,7 @@ export default function Skills() {
 
   const Tab = ({ children, t }) => (
     <li
-      className={tab[t] ? styles.activeTab : ""}
+      className={tab[t] ? "active" : ""}
       onClick={() => !Object.keys(tab).includes(t) && setTab({ [t]: true })}
     >
       {children}
@@ -62,10 +60,10 @@ export default function Skills() {
   )
 
   return (
-    <div className={styles.skillsSection}>
-      <h1 className={styles.sectionTitle}>Technology</h1>
-      <div className={styles.skillsCont}>
-        <ul className={styles.tabs}>
+    <div className="section skill">
+      <h1 className="section_title">Technology</h1>
+      <div className="content">
+        <ul className="tabs">
           <Tab t="a">
             <span>Programming </span>
             <span>Languages</span>

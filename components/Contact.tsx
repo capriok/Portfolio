@@ -12,7 +12,7 @@ export default function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="btn">
+          <button className="btn btn-icon">
             <HiOutlineMail />
           </button>
         </a>
@@ -21,7 +21,7 @@ export default function Contact() {
         <div className="sub-title">Other Platforms</div>
         <div className="btns">
           <a href="https://github.com/capriok" target="_blank" rel="noreferrer">
-            <button className="btn">
+            <button className="btn btn-icon">
               <SiGithub />
             </button>
           </a>
@@ -30,7 +30,7 @@ export default function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="btn">
+            <button className="btn btn-icon">
               <SiLinkedin />
             </button>
           </a>

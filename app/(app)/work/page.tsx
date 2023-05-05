@@ -1,24 +1,12 @@
-import React from "react"
-
+import { getProjects } from "@api/getProjects"
 import ProjectList from "@components/ProjectList"
 
-import projectsJson from "@json/projects.json"
-import featuresJson from "@json/features.json"
+export default async function Work() {
+  const projects = getProjects(true)
 
-function getProjects() {
-  return projectsJson
-}
-
-function getFeatures() {
-  return featuresJson
-}
-
-export default function Work() {
-  const projectsData = getProjects()
-  const featuresData = getFeatures()
   return (
     <div className="page">
-      <ProjectList projects={projectsData} features={featuresData} />
+      <ProjectList projects={projects} paginated={false} />
     </div>
   )
 }

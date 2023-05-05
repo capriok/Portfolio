@@ -10,23 +10,26 @@ interface Props {
 }
 
 export default function FeaturedCard({ project, index }: Props) {
+  const isLtr = index !== 1
   return (
     <div className="feature-card">
-      <div className={index !== 1 ? "lefty" : `righty`}>
-        <div className="feature">
-          <div className="thumb">
-            <Link passHref href={`/${project.slug}`} legacyBehavior>
-              <div className="overlay"></div>
-            </Link>
-            <Image src={project.thumb} alt={project.title} width={450} height={245} />
-          </div>
-        </div>
-        <div className="content">
-          <h5 className="mono title">Featured Project</h5>
+      <div className={isLtr ? "rtl" : `ltr`}>
+        <div className="feature group">
           <Link passHref href={`/${project.slug}`}>
-            <h1>{project.title}</h1>
+            <div className="overlay group-hover:opacity-0" />
           </Link>
-          <p className="description">{project.description}</p>
+          <Image src={project.thumb} alt={project.title} width={450} height={245} />
+        </div>
+        <div className="content group">
+          <h1 className="mono pre-title">Featured Project</h1>
+          <Link passHref href={`/${project.slug}`}>
+            <h1 className="title">{project.title}</h1>
+          </Link>
+          <p
+            className={`description  ${isLtr ? "group-hover:mr-2" : "group-hover:ml-2"}`}
+          >
+            {project.description}
+          </p>
           <div className="tags">
             {project.tags.map((tag, i) => (
               <span key={i} className="mono">

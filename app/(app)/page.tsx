@@ -4,15 +4,8 @@ import FeatureList from "@components/FeatureList"
 import ProjectList from "@components/ProjectList"
 import Contact from "@components/Contact"
 
-import projectsJson from "@json/projects.json"
-import featuresJson from "@json/features.json"
-
-function getProjects() {
-  return projectsJson
-}
-function getFeatures() {
-  return featuresJson
-}
+import { getProjects } from "@api/getProjects"
+import { getFeatures } from "@api/getFeatures"
 
 export default function Home() {
   const projectsData = getProjects()
@@ -23,7 +16,7 @@ export default function Home() {
       <Introduction />
       {/* <Skills /> */}
       <FeatureList features={featuresData} />
-      <ProjectList projects={projectsData} features={featuresData} />
+      <ProjectList projects={projectsData} paginated={true} />
       <Contact />
     </>
   )
