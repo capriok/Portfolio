@@ -15,7 +15,7 @@ $image-width: 450px;
   //     margin-bottom: 50px;
   //   }
   // }
-  .featureCard {
+  .lefty {
     position: relative;
     min-width: 100%;
     &:last-child {
@@ -150,7 +150,7 @@ $image-width: 450px;
       // }
     }
   }
-  .inverted {
+  .righty {
     .contentCont {
       position: unset;
       align-items: flex-start;

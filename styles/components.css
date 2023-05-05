@@ -2,6 +2,7 @@
 @import "./about.css";
 @import "./resume.css";
 @import "./projects.css";
+@import "./features.css";
 
 @layer components {
   .layout {
