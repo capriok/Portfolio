@@ -1,29 +1,27 @@
 import { HiOutlineMail } from "react-icons/hi"
 import { SiGithub, SiLinkedin } from "react-icons/si"
 
-import styles from "@styles/components/sections/contact.module.scss"
-
 export default function Contact() {
   return (
-    <div className={styles.contactSection}>
-      <div className={styles.contentCont}>
-        <h1 className={styles.sectionTitle}>Feel free to reach out.</h1>
-        <p>Direct Email</p>
+    <div className="section contact">
+      <div className="content">
+        <h1 className="title">Feel free to reach out.</h1>
+        <div className="sub-title">Direct Email</div>
         <a
           href="https://mail.google.com/mail/u/0/?fs=1&to=capriok7@gmail.com&su=Portfolio%20Inquiry&tf=cm"
           target="_blank"
           rel="noreferrer"
         >
-          <button>
+          <button className="btn">
             <HiOutlineMail />
           </button>
         </a>
       </div>
-      <div className={styles.contentCont}>
-        <p>Other Platforms</p>
-        <div className={styles.buttonCont}>
+      <div className="content">
+        <div className="sub-title">Other Platforms</div>
+        <div className="btns">
           <a href="https://github.com/capriok" target="_blank" rel="noreferrer">
-            <button>
+            <button className="btn">
               <SiGithub />
             </button>
           </a>
@@ -32,7 +30,7 @@ export default function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <button>
+            <button className="btn">
               <SiLinkedin />
             </button>
           </a>

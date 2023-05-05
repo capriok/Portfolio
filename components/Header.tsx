@@ -1,50 +1,21 @@
 import Link from "next/link"
 
-interface Props {
-  dir?: string
-  pos?: number
-  atHome?: boolean
-  isMobile?: boolean
-}
-
-export default function Header({ dir, pos = 0, atHome, isMobile }: Props) {
-  // function makeClass(): string {
-  // const classes = {
-  //   fill: ` ${styles.fill}`,
-  //   hide: ` ${styles.hide}`,
-  //   show: ` ${styles.show}`,
-  // }
-  // let cns = styles.homeHeader
-  // if (isMobile || pos >= 300) cns += classes.fill
-  // if (!atHome && pos > 0) cns += classes.fill
-  // switch (dir) {
-  //   case "down":
-  //     cns += classes.hide
-  //   case "up":
-  //     cns += classes.show
-  //   case "top":
-  //     cns
-  //   default:
-  //     break
-  // }
-  // return cns
-  // }
-
+export default function Header() {
   return (
     <header className="header">
-      <div className="header-content">
+      <div className="content">
         <Link passHref href="/">
-          <h1 className="header-title">KC</h1>
+          <h1 className="title">KC</h1>
         </Link>
-        <div className="header-navigation">
-          <Link className="header-nav-item" passHref href="/about">
+        <div className="navigation">
+          <Link className="nav-item" passHref href="/about">
             <span className="mono">About</span>
           </Link>
-          <Link className="header-nav-item" passHref href="/work">
+          <Link className="nav-item" passHref href="/work">
             <span className="mono">Work</span>
           </Link>
           <Link
-            className="header-nav-item"
+            className="nav-item"
             passHref
             href="https://mail.google.com/mail/u/0/?fs=1&to=capriokdev@gmail.com&su=Portfolio%20Inquiry&tf=cm"
             target="_blank"
@@ -52,7 +23,7 @@ export default function Header({ dir, pos = 0, atHome, isMobile }: Props) {
           >
             <span className="mono">Contact</span>
           </Link>
-          <Link className="header-nav-item" passHref href="/resume">
+          <Link className="nav-item" passHref href="/resume">
             <span className="mono">Resume</span>
           </Link>
         </div>

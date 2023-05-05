@@ -5,32 +5,52 @@
 
 @layer components {
   .layout {
-    @apply w-full max-w-[1000px] transition-all delay-200 mx-auto my-0 px-6 md:p-0;
+    @apply w-full max-w-[1000px] transition-all delay-200 mx-auto my-0 px-4 md:px-6 md:p-0;
   }
-  .layout-footer {
-    @apply h-[50px] flex justify-center align-middle mt-auto;
+  .layout .footer {
+    @apply h-[100px] flex justify-center items-center mt-auto;
   }
   .resume-layout {
     @apply w-full h-[calc(100vh-100px)] transition-all delay-200 mx-auto my-0;
   }
 
   .section-title {
-    @apply text-4xl font-bold my-4;
+    @apply text-4xl font-bold mt-14 mb-8;
+  }
+
+  .btn {
+    @apply cursor-pointer flex justify-center font-bold rounded-lg px-4 py-2;
+  }
+  .btns {
+    @apply grid grid-cols-2 gap-2 m-2;
   }
 
   .header {
-    @apply z-50 sticky select-none top-0 w-full h-[100px] flex justify-between items-center px-4 bg-transparent;
+    @apply bg-white z-50 sticky select-none top-0 w-full h-[100px] flex justify-between items-center px-4;
   }
-  .header-content {
+  .header .content {
     @apply flex justify-between w-full max-w-[1000px] mx-auto p-0;
   }
-  .header-navigation {
-    @apply flex;
+  .header .navigation {
+    @apply flex align-bottom;
   }
-  .header-nav-item {
-    @apply flex ml-4;
+  .header .nav-item {
+    @apply flex items-center ml-6;
   }
-  .header-title {
+  .header .title {
     @apply cursor-pointer m-0 text-3xl font-bold;
+  }
+
+  .contact {
+    @apply flex flex-col justify-center items-center;
+  }
+  .contact .content {
+    @apply select-none flex flex-col justify-center items-center;
+  }
+  .contact .content .title {
+    @apply text-2xl font-bold;
+  }
+  .contact .content .sub-title {
+    @apply text-lg font-semibold mt-4;
   }
 }

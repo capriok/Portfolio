@@ -1,13 +1,10 @@
 "use client"
 import React, { useState } from "react"
 
-import featuresJson from "@json/features.json"
-import projectsJson from "@json/projects.json"
-
 import { MdExpandMore, MdExpandLess } from "react-icons/md"
 import ProjectCard from "@components/ProjectCard"
 
-export default function ProjectMap() {
+export default function ProjectList({ projects, features }) {
   const [pg, setPg] = useState<number>(6)
 
   let atHome
@@ -15,8 +12,8 @@ export default function ProjectMap() {
     atHome = window.location.pathname === "/"
   }
 
-  const slugs = featuresJson.map((f) => f.slug)
-  const projects = [...projectsJson].filter((p) => {
+  const slugs = features.map((f) => f.slug)
+  const projectList = projects.filter((p) => {
     if (!atHome) return p
     if (slugs.some((s) => s === p.slug)) return
     return p
@@ -26,19 +23,19 @@ export default function ProjectMap() {
     <div className="section project-list">
       <h1 className="section-title">Project Collection</h1>
       <div className="project-cards">
-        {projects.slice(0, atHome ? pg : projects.length).map((project, i) => (
+        {projectList.slice(0, atHome ? pg : projectList.length).map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
       {atHome && (
-        <div className="project-list-controls">
+        <div className="controls">
           {pg > 6 && (
-            <button onClick={() => setPg(pg - 3)}>
+            <button className="btn" onClick={() => setPg(pg - 3)}>
               <MdExpandLess />
             </button>
           )}
-          {pg <= projects.length && (
-            <button onClick={() => setPg(pg + 3)}>
+          {pg <= projectList.length && (
+            <button className="btn" onClick={() => setPg(pg + 3)}>
               <MdExpandMore />
             </button>
           )}

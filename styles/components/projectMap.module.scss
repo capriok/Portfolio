@@ -1,11 +1,9 @@
-@import "../../index.scss";
-
 .projectMapSection {
-  @include flex;
+  // @include flex;
   flex-direction: column;
   width: 100%;
   .cardCont {
-    @include flex;
+    // @include flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: flex-start;
@@ -17,17 +15,17 @@
     :nth-child(17) {
       margin: 0 15px;
       transition: 0.3s;
-      @include media("<=800") {
-        margin: unset;
-        margin-right: 15px;
-      }
+      // @include media("<=800") {
+      //   margin: unset;
+      //   margin-right: 15px;
+      // }
     }
   }
   .buttonCont {
     button {
-      @include flex;
+      // @include flex;
       margin-bottom: 5px;
-      @include button-fx;
+      // @include button-fx;
     }
   }
 }

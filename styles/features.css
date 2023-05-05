@@ -1,28 +1,28 @@
-.project-cards {
+.feature-cards {
   @apply grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-6;
 }
 
-.project-card {
+.feature-card {
   @apply select-none min-h-[220px] flex flex-col justify-between align-top p-4 rounded-md border shadow-md;
 }
-.project-card .head {
+.feature-card .head {
   @apply flex w-full pb-2;
 }
-.project-card .head-title {
+.feature-card .head-title {
   @apply flex-1 text-lg mb-0;
 }
-.project-card .head-icon {
+.feature-card .head-icon {
   @apply text-2xl ml-2;
 }
-.project-card .foot-icon {
+.feature-card .foot-icon {
   @apply text-xl ml-2;
 }
-.project-card .foot {
+.feature-card .foot {
   @apply flex justify-end w-full pt-4;
 }
-.project-list .controls {
+.feature-list .controls {
   @apply flex justify-center mt-6;
 }
-.project-list .controls .btn {
+.feature-list .controls .btn {
   @apply ml-4;
 }

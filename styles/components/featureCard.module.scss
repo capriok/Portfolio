@@ -1,5 +1,3 @@
-@import "../index.scss";
-
 $overlay-opacity: 0.2;
 $image-width: 450px;
 
@@ -12,11 +10,11 @@ $image-width: 450px;
   &:not(:last-child) {
     margin-bottom: 125px;
   }
-  @include media("<=550") {
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-  }
+  // @include media("<=550") {
+  //   &:not(:last-child) {
+  //     margin-bottom: 50px;
+  //   }
+  // }
   .featureCard {
     position: relative;
     min-width: 100%;
@@ -27,20 +25,20 @@ $image-width: 450px;
       position: absolute;
       top: 0;
       right: 0;
-      @include flex;
+      // @include flex;
       flex-direction: column;
       align-items: flex-end;
       text-align: right;
       width: 100%;
       max-width: 60%;
       transition: 0.2s;
-      @include media("<=800") {
-        max-width: 80%;
-      }
-      @include media("<=550") {
-        position: unset;
-        max-width: 100%;
-      }
+      // @include media("<=800") {
+      //   max-width: 80%;
+      // }
+      // @include media("<=550") {
+      //   position: unset;
+      //   max-width: 100%;
+      // }
       * {
         z-index: 2;
       }
@@ -60,7 +58,7 @@ $image-width: 450px;
       }
       .descriptionCont {
         cursor: default;
-        @include flex;
+        // @include flex;
         justify-content: flex-end;
         min-height: 60px;
         padding: 20px 10px;
@@ -100,9 +98,9 @@ $image-width: 450px;
       width: 100%;
       max-width: $image-width;
       transition: 0.2s;
-      @include media("<=550") {
-        display: none;
-      }
+      // @include media("<=550") {
+      //   display: none;
+      // }
       .imgCont {
         position: relative;
         overflow: hidden;
@@ -119,10 +117,10 @@ $image-width: 450px;
           opacity: $overlay-opacity;
           background-color: steelblue;
           transition: 0.2s;
-          @include media("<=800") {
-            opacity: 0.8;
-            background-color: rgb(192, 211, 224);
-          }
+          // @include media("<=800") {
+          //   opacity: 0.8;
+          //   background-color: rgb(192, 211, 224);
+          // }
           &:hover {
             opacity: 0;
           }
@@ -137,19 +135,19 @@ $image-width: 450px;
         }
       }
       transition: 0.2s;
-      @include media("<=800") {
-        .contentCont {
-          max-width: calc(80% + 10px);
-        }
-      }
-      @include media("<=550") {
-        .contentCont {
-          max-width: calc(100%);
-          .descriptionCont {
-            margin-right: unset;
-          }
-        }
-      }
+      // @include media("<=800") {
+      //   .contentCont {
+      //     max-width: calc(80% + 10px);
+      //   }
+      // }
+      // @include media("<=550") {
+      //   .contentCont {
+      //     max-width: calc(100%);
+      //     .descriptionCont {
+      //       margin-right: unset;
+      //     }
+      //   }
+      // }
     }
   }
   .inverted {
@@ -178,17 +176,17 @@ $image-width: 450px;
         .descriptionCont {
           margin-right: unset;
           margin-left: 10px;
-          @include media("<=550") {
-            margin-right: unset;
-            margin-left: unset;
-          }
+          // @include media("<=550") {
+          //   margin-right: unset;
+          //   margin-left: unset;
+          // }
         }
       }
     }
-    @include media("<=550") {
-      .thumbCont {
-        margin-left: unset;
-      }
-    }
+    // @include media("<=550") {
+    //   .thumbCont {
+    //     margin-left: unset;
+    //   }
+    // }
   }
 }

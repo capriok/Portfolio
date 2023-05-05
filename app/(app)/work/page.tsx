@@ -1,11 +1,24 @@
 import React from "react"
 
-import ProjectMap from "@components/sections/ProjectMap"
+import ProjectList from "@components/ProjectList"
+
+import projectsJson from "@json/projects.json"
+import featuresJson from "@json/features.json"
+
+function getProjects() {
+  return projectsJson
+}
+
+function getFeatures() {
+  return featuresJson
+}
 
 export default function Work() {
+  const projectsData = getProjects()
+  const featuresData = getFeatures()
   return (
     <div className="page">
-      <ProjectMap />
+      <ProjectList projects={projectsData} features={featuresData} />
     </div>
   )
 }

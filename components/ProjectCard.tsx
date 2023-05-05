@@ -1,11 +1,8 @@
-"use client"
 import Link from "next/link"
 
-import { AiOutlineFolder, AiOutlineFolderOpen } from "react-icons/ai"
+import { AiOutlineFolder } from "react-icons/ai"
 import { AiFillGithub } from "react-icons/ai"
 import { RiExternalLinkFill } from "react-icons/ri"
-
-import styles from "@styles/components/projectCard.module.scss"
 
 interface Props {
   project: Project
@@ -13,34 +10,33 @@ interface Props {
 
 function ProjectCard({ project }: Props) {
   return (
-    <div className={styles.cardWrapper}>
-      <div className={styles.card}>
-        <div className={styles.head}>
-          <h1 className={styles.cardTitle}>
-            <Link passHref href={`/${project.slug}`}>
-              {project.title}
-            </Link>
-          </h1>
-          <div className={styles.cardFolder}>
-            <div className={styles.folderClosed}>
-              <AiOutlineFolder />
-            </div>
-            <div className={styles.folderOpen}>
-              <AiOutlineFolderOpen />
-            </div>
+    <div className="project-card">
+      <div className="head">
+        <h1 className="head-title">
+          <Link passHref href={`/${project.slug}`}>
+            {project.title}
+          </Link>
+        </h1>
+        <div className="icon">
+          <div className="head-icon">
+            <AiOutlineFolder />
           </div>
         </div>
-        <div className={styles.description}>
-          <p>{project.description}</p>
-        </div>
-        <div className={styles.foot}>
-          <Link passHref href={`${project.source}`} target="_blank" rel="noreferrer">
+      </div>
+      <div className="description">
+        <div>{project.description}</div>
+      </div>
+      <div className="foot">
+        <Link passHref href={`${project.source}`} target="_blank" rel="noreferrer">
+          <div className="foot-icon">
             <AiFillGithub />
-          </Link>
-          <Link passHref href={`${project.demo}`} target="_blank" rel="noreferrer">
+          </div>
+        </Link>
+        <Link passHref href={`${project.demo}`} target="_blank" rel="noreferrer">
+          <div className="foot-icon">
             <RiExternalLinkFill />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   )

@@ -1,29 +1,27 @@
-@import "../index.scss";
-
 .cardWrapper {
   flex: 1;
-  @include flex;
+  // @include flex;
   align-items: stretch;
   transition: 0.2s;
 
   min-width: 30%;
   max-width: 33%;
   min-height: 250px;
-  @include media("<=800") {
-    min-width: 45%;
-    max-width: 50%;
-    margin-right: 15px;
-  }
-  @include media("<=550") {
-    min-width: 100%;
-    max-width: 100%;
-    margin-right: unset;
-    min-height: 150px;
-  }
+  // @include media("<=800") {
+  //   min-width: 45%;
+  //   max-width: 50%;
+  //   margin-right: 15px;
+  // }
+  // @include media("<=550") {
+  //   min-width: 100%;
+  //   max-width: 100%;
+  //   margin-right: unset;
+  //   min-height: 150px;
+  // }
 
   .card {
     user-select: none;
-    @include flex;
+    // @include flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -35,17 +33,17 @@
     border: 2px solid rgb(230, 230, 230);
     box-shadow: 1px 1px 10px -2px rgb(210, 210, 210);
     transition: 0.2s;
-    @include media("<=550") {
-      padding: 15px;
-    }
+    // @include media("<=550") {
+    //   padding: 15px;
+    // }
     .head {
-      @include flex;
+      // @include flex;
       justify-content: space-between;
       width: 100%;
       padding-bottom: 20px;
-      @include media("<=550") {
-        padding-bottom: 15px;
-      }
+      // @include media("<=550") {
+      //   padding-bottom: 15px;
+      // }
       svg {
         font-size: 1.5rem;
       }
@@ -63,9 +61,9 @@
       margin-left: 0px !important;
       margin: 0;
       transition: 0.2s;
-      @include media("<=550") {
-        padding-bottom: 15px;
-      }
+      // @include media("<=550") {
+      //   padding-bottom: 15px;
+      // }
       p {
         margin: 0;
       }
@@ -96,7 +94,7 @@
       padding-left: 1px;
     }
     &:hover {
-      background-color: $app-background;
+      // background-color: $app-background;
       .head {
         transition: 0.2s;
       }

@@ -1,6 +1,6 @@
 import React from "react"
 
-import Contact from "@components/sections/Contact"
+import Contact from "@components/Contact"
 
 import experience from "@json/experience.json"
 

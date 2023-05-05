@@ -1,19 +1,24 @@
 .section {
   @apply mb-[75px] md:mb-[125px] transition-all delay-200;
 }
-.introduction-section {
+
+.introduction {
   @apply grid place-items-center w-full h-[calc(100vh-100px)];
 }
-.introduction-content {
+.content {
   @apply w-[80%] md:w-[60%];
 }
 
-.introduction-title {
+.title {
   @apply text-5xl md:text-7xl mb-6;
 }
-.introduction-sub-title {
+.sub-title {
   @apply text-xl md:text-3xl mb-2;
 }
-.introduction-crumb {
+.crumb {
   @apply mb-2;
+}
+
+.feature-list {
+  @apply flex flex-col w-full;
 }
