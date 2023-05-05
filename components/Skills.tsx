@@ -32,96 +32,90 @@ export default function Skills() {
   const [tab, setTab] = useState<object>({ b: true })
 
   const Tab = ({ children, t }) => (
-    <li
-      className={tab[t] ? "active" : ""}
+    <div
+      className={tab[t] ? "tab active" : "tab"}
       onClick={() => !Object.keys(tab).includes(t) && setTab({ [t]: true })}
     >
       {children}
-    </li>
+    </div>
   )
 
   const Skill = ({ Icon, name }) => (
-    <li>
-      <p>
+    <div className="skill">
+      <div className="icon">
         <Icon />
-      </p>
-      <p>{name}</p>
-    </li>
+      </div>
+      <div className="name">{name}</div>
+    </div>
   )
 
-  const Icons = ({ children, t }) => (
-    <>
-      {tab[t] && (
-        <section>
-          <ul>{children}</ul>
-        </section>
-      )}
-    </>
-  )
+  const Icons = ({ children, t }) => tab[t] && children
 
   return (
-    <div className="section skill">
-      <h1 className="section_title">Technology</h1>
-      <div className="content">
-        <ul className="tabs">
+    <div className="section skills">
+      <h1 className="section-title">Technology</h1>
+      <div className="flipper">
+        <div className="tabs">
           <Tab t="a">
-            <span>Programming </span>
-            <span>Languages</span>
+            <div>Programming </div>
+            <div>Languages</div>
           </Tab>
           <Tab t="b">
-            <span>Front-end </span>
-            <span>Technologies</span>
+            <div>Front-end </div>
+            <div>Technologies</div>
           </Tab>
           <Tab t="c">
-            <span>Back-end </span>
-            <span>Technologies</span>
+            <div>Back-end </div>
+            <div>Technologies</div>
           </Tab>
           <Tab t="d">
-            <span>Database </span>
-            <span>Technologies</span>
+            <div>Database </div>
+            <div>Technologies</div>
           </Tab>
           <Tab t="e">
-            <span>Storage and</span>
-            <span>Deployment</span>
+            <div>Storage and</div>
+            <div>Deployment</div>
           </Tab>
-        </ul>
-        <Icons t="a">
-          <Skill Icon={SiJavascript} name="JavaScript" />
-          <Skill Icon={SiTypescript} name="TypeScript" />
-          <Skill Icon={SiCsharp} name="C Sharp" />
-          <Skill Icon={SiPython} name="Python" />
-          <Skill Icon={FaJava} name="Java" />
-        </Icons>
-        <Icons t="b">
-          <Skill Icon={SiReact} name="React" />
-          <Skill Icon={SiNextdotjs} name="Next" />
-          <Skill Icon={RiHtml5Line} name="HTML" />
-          <Skill Icon={RiCss3Fill} name="CSS" />
-          <Skill Icon={DiSass} name="SASS" />
-        </Icons>
+        </div>
+        <div className="content">
+          <Icons t="a">
+            <Skill Icon={SiJavascript} name="JavaScript" />
+            <Skill Icon={SiTypescript} name="TypeScript" />
+            <Skill Icon={SiCsharp} name="C Sharp" />
+            <Skill Icon={SiPython} name="Python" />
+            <Skill Icon={FaJava} name="Java" />
+          </Icons>
+          <Icons t="b">
+            <Skill Icon={SiReact} name="React" />
+            <Skill Icon={SiNextdotjs} name="Next" />
+            <Skill Icon={RiHtml5Line} name="HTML" />
+            <Skill Icon={RiCss3Fill} name="CSS" />
+            <Skill Icon={DiSass} name="SASS" />
+          </Icons>
 
-        <Icons t="c">
-          <Skill Icon={SiNodedotjs} name="Express.js" />
-          <Skill Icon={SiGraphql} name="GraphQL" />
-          <Skill Icon={SiTrpc} name="TRPC" />
-          <Skill Icon={SiPrisma} name="Prisma" />
-          <Skill Icon={SiSocketdotio} name="Socket.io" />
-        </Icons>
-        <Icons t="d">
-          <Skill Icon={DiPostgresql} name="PostgreSQL" />
-          <Skill Icon={SiMysql} name="MySQL" />
-          <Skill Icon={SiMicrosoftsqlserver} name="SQL Server" />
-          <Skill Icon={SiMongodb} name="Mongo DB" />
-          <Skill Icon={VscDatabase} name="NoSQL" />
-        </Icons>
-        <Icons t="e">
-          <Skill Icon={SiAmazonaws} name="AWS" />
-          <Skill Icon={SiMicrosoftazure} name="Azure" />
-          <Skill Icon={SiVercel} name="Vercel" />
-          <Skill Icon={SiNetlify} name="Netlify" />
-          <Skill Icon={SiGithub} name="Github" />
-          <Skill Icon={SiNpm} name="NPM" />
-        </Icons>
+          <Icons t="c">
+            <Skill Icon={SiNodedotjs} name="Express.js" />
+            <Skill Icon={SiGraphql} name="GraphQL" />
+            <Skill Icon={SiTrpc} name="TRPC" />
+            <Skill Icon={SiPrisma} name="Prisma" />
+            <Skill Icon={SiSocketdotio} name="Socket.io" />
+          </Icons>
+          <Icons t="d">
+            <Skill Icon={DiPostgresql} name="PostgreSQL" />
+            <Skill Icon={SiMysql} name="MySQL" />
+            <Skill Icon={SiMicrosoftsqlserver} name="SQL Server" />
+            <Skill Icon={SiMongodb} name="Mongo DB" />
+            <Skill Icon={VscDatabase} name="NoSQL" />
+          </Icons>
+          <Icons t="e">
+            <Skill Icon={SiAmazonaws} name="AWS" />
+            <Skill Icon={SiMicrosoftazure} name="Azure" />
+            <Skill Icon={SiVercel} name="Vercel" />
+            <Skill Icon={SiNetlify} name="Netlify" />
+            <Skill Icon={SiGithub} name="Github" />
+            <Skill Icon={SiNpm} name="NPM" />
+          </Icons>
+        </div>
       </div>
     </div>
   )

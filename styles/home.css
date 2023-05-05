@@ -1,22 +1,53 @@
 .section {
-  @apply mb-[75px] md:mb-[125px] transition-all delay-200;
+  @apply mb-[50px] md:mb-[125px] transition-all delay-200;
 }
 
 .introduction {
   @apply grid place-items-center w-full h-[calc(100vh-100px)];
 }
-.content {
+.introduction .content {
   @apply w-[80%] md:w-[60%];
 }
 
-.title {
+.introduction .title {
   @apply text-5xl md:text-7xl mb-6;
 }
-.sub-title {
+.introduction .sub-title {
   @apply text-xl md:text-3xl mb-2;
 }
-.crumb {
+.introduction .crumb {
   @apply mb-2;
+}
+
+.skills {
+  @apply w-full;
+}
+.skills * {
+  @apply transition-all ease-in-out duration-300;
+}
+.skills .flipper {
+  @apply md:w-[80%] mx-auto flex flex-col md:flex-col;
+}
+.skills .tabs {
+  @apply w-full flex md:justify-center overflow-x-scroll md:overflow-visible;
+}
+.skills .tabs .tab {
+  @apply w-full flex flex-col justify-center items-center text-xs md:text-base p-2 cursor-pointer border-b-2 border-[#4682B4];
+}
+.skills .tabs .active {
+  @apply rounded-tr-lg rounded-tl-lg bg-neutral-600/20  border-black;
+}
+.skills .content {
+  @apply w-full flex flex-wrap justify-center items-center;
+}
+.skills .content .skill {
+  @apply w-[50%] flex flex-col justify-center items-center pt-8 pb-2;
+}
+.skills .content .skill .icon {
+  @apply text-2xl md:text-3xl;
+}
+.skills .content .skill .name {
+  @apply text-sm md:text-base mt-2 md:mt-4;
 }
 
 .feature-list {

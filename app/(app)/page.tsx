@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Introduction />
-      {/* <Skills /> */}
+      <Skills />
       <FeatureList features={featuresData} />
       <ProjectList projects={projectsData} paginated={true} />
       <Contact />
