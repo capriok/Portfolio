@@ -14,10 +14,6 @@ interface Props {
 export default function FullView({ images, view, set }: Props) {
   const first = 0
   const last = images.length - 1
-  let windowWidth
-  if (typeof window !== `undefined`) {
-    windowWidth = window.innerWidth < 500
-  }
 
   useEffect(() => {
     window.addEventListener("keydown", handleKey)
@@ -66,29 +62,28 @@ export default function FullView({ images, view, set }: Props) {
     })
   }
 
-  return (
-    <>
-      {view.open && (
-        <div className={styles.fullView}>
-          {view.open && <div className={styles.viewClickout} onClick={() => close()} />}
-          <Image
-            className={styles.image}
-            src={images[view.image]}
-            alt={images[view.image]}
-            width={1920}
-            height={1005}
-          />
+  if (!view.open) return <></>
 
-          <div className={styles.controls}>
-            <button onClick={() => prevImage()}>
-              <MdChevronLeft />
-            </button>
-            <button onClick={() => nextImage()}>
-              <MdChevronRight />
-            </button>
-          </div>
+  return (
+    <div className="wide-view">
+      <div className="content">
+        <Image
+          className="image"
+          src={images[view.image]}
+          alt={images[view.image]}
+          width={1920}
+          height={1005}
+        />
+        <div className="controls btns">
+          <button className="btn btn-icon" onClick={() => prevImage()}>
+            <MdChevronLeft />
+          </button>
+          <button className="btn btn-icon" onClick={() => nextImage()}>
+            <MdChevronRight />
+          </button>
         </div>
-      )}
-    </>
+      </div>
+      <div className="underlay" onClick={() => close()} />
+    </div>
   )
 }

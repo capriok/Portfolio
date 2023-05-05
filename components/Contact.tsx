@@ -7,15 +7,17 @@ export default function Contact() {
       <div className="content">
         <h1 className="title">Feel free to reach out.</h1>
         <div className="sub-title">Direct Email</div>
-        <a
-          href="https://mail.google.com/mail/u/0/?fs=1&to=capriok7@gmail.com&su=Portfolio%20Inquiry&tf=cm"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="btn btn-icon">
-            <HiOutlineMail />
-          </button>
-        </a>
+        <div className="btns">
+          <a
+            href="https://mail.google.com/mail/u/0/?fs=1&to=capriok7@gmail.com&su=Portfolio%20Inquiry&tf=cm"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="btn btn-icon">
+              <HiOutlineMail />
+            </button>
+          </a>
+        </div>
       </div>
       <div className="content">
         <div className="sub-title">Other Platforms</div>

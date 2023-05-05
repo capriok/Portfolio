@@ -26,3 +26,61 @@
 .project-list .controls .btn {
   @apply ml-4;
 }
+
+.project-view .links {
+  @apply w-full flex;
+}
+.project-view .description {
+  @apply mb-4 pb-2 border-b;
+}
+.project-view .sub-title {
+  @apply text-2xl py-2;
+}
+.project-view .content {
+  @apply pl-8 pb-2;
+}
+.project-view .process {
+  @apply indent-4 pb-2;
+}
+.project-view .links {
+  @apply w-full grid grid-cols-3 gap-2;
+}
+.project-view .links .link {
+  @apply flex flex-col justify-center items-center;
+}
+.project-view .links > div {
+  @apply flex justify-center items-center bg-red-200;
+}
+.project-view .content > li > a {
+  @apply underline text-blue-600;
+}
+
+.carousel {
+  @apply w-full flex flex-col justify-center items-center;
+}
+.carousel .content {
+  @apply w-full m-auto;
+}
+.carousel .image {
+  @apply ml-2 max-w-[400px] max-h-[200px] rounded-lg;
+}
+.carousel .controls {
+  @apply flex gap-2 my-4;
+}
+.carousel .controls link p {
+  @apply mb-4;
+}
+
+.wide-view {
+  @apply z-10 w-[100vw] h-screen fixed left-0 top-0 grid place-items-center;
+}
+.wide-view .content {
+  @apply w-[95%];
+}
+.wide-view .controls {
+  @apply w-full flex justify-center items-center;
+}
+
+.wide-view .underlay {
+  @apply z-[-10] w-[100vw] h-screen fixed left-0 top-0 bg-neutral-800/40;
+}

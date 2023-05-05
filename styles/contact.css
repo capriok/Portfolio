@@ -1,0 +1,12 @@
+.contact {
+  @apply flex flex-col justify-center items-center;
+}
+.contact .content {
+  @apply select-none flex flex-col justify-center items-center;
+}
+.contact .content .title {
+  @apply text-2xl font-bold;
+}
+.contact .content .sub-title {
+  @apply text-lg font-semibold mt-4;
+}

@@ -38,7 +38,7 @@
   @apply rounded-tr-lg rounded-tl-lg bg-neutral-600/20  border-black;
 }
 .skills .content {
-  @apply w-full flex flex-wrap justify-center items-center;
+  @apply w-full flex flex-wrap md:flex-nowrap justify-center items-center;
 }
 .skills .content .skill {
   @apply w-[50%] flex flex-col justify-center items-center pt-8 pb-2;
