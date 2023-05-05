@@ -62,7 +62,7 @@
   @apply w-full m-auto;
 }
 .carousel .image {
-  @apply ml-2 max-w-[400px] max-h-[200px] rounded-lg;
+  @apply max-w-[400px] max-h-[200px] rounded-lg;
 }
 .carousel .controls {
   @apply flex gap-2 my-4;
@@ -76,6 +76,9 @@
 }
 .wide-view .content {
   @apply w-[95%];
+}
+.wide-view .content img {
+  @apply shadow-xl rounded-lg;
 }
 .wide-view .controls {
   @apply w-full flex justify-center items-center;

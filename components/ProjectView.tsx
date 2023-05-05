@@ -6,8 +6,6 @@ import Carousel from "./Carousel"
 import { AiFillGithub, AiOutlineHome } from "react-icons/ai"
 import { RiExternalLinkFill } from "react-icons/ri"
 
-import styles from "@styles/components/projectView.module.scss"
-
 interface Props {
   project: Project
 }
