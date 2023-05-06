@@ -1,3 +1,4 @@
+"use client"
 import React from "react"
 
 const PrimaryPDF = process.env.NEXT_PUBLIC_RESUME_S3

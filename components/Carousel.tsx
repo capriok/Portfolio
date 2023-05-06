@@ -47,7 +47,8 @@ export default function Carousel({ images }: Props) {
                 width={400}
                 height={200}
                 quality={100}
-                loading="lazy"
+                loading="eager"
+                priority={true}
               />
             </div>
           ))}

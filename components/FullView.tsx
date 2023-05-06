@@ -55,6 +55,9 @@ export default function FullView({ images, view, set }: Props) {
           alt={images[view.image]}
           width={1920}
           height={1005}
+          quality={100}
+          loading="eager"
+          priority={true}
         />
         <div className="controls btns">
           <button className="btn btn-icon gradient-hover" onClick={() => prevImage()}>
