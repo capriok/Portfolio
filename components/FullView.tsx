@@ -3,8 +3,6 @@ import Image from "next/image"
 
 import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 
-import styles from "@styles/components/fullView.module.scss"
-
 interface Props {
   images: string[]
   view: ViewState
@@ -38,31 +36,13 @@ export default function FullView({ images, view, set }: Props) {
     }
   }
 
-  function prevImage() {
-    set((v) => {
-      return {
-        open: true,
-        image: v.image === first ? last : v.image - 1,
-      }
-    })
-  }
+  const prevImage = () =>
+    set((v) => ({ open: true, image: v.image === first ? last : v.image - 1 }))
 
-  function nextImage() {
-    set((v) => {
-      return {
-        open: true,
-        image: v.image === last ? first : v.image + 1,
-      }
-    })
-  }
+  const nextImage = () =>
+    set((v) => ({ open: true, image: v.image === last ? first : v.image + 1 }))
 
-  function close() {
-    console.log("close")
-
-    set(() => {
-      return { open: false, image: 0 }
-    })
-  }
+  const close = () => set(() => ({ open: false, image: 0 }))
 
   if (!view.open) return <></>
 

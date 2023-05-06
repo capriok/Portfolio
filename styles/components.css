@@ -27,7 +27,6 @@
   .btn {
     @apply cursor-pointer flex justify-center font-bold text-sm rounded-lg py-3 px-8 hover:text-[#4682B4];
     @apply transition-colors shadow-sm bg-primary border-border;
-    @apply hover:bg-gradient-to-br hover:from-primary hover:to-secondary;
   }
   .btn * {
     @apply hover:text-[#4682B4];
@@ -37,5 +36,11 @@
   }
   .hover {
     @apply hover:text-[#4682B4] transition-colors;
+  }
+
+  .gradient-hover {
+    @apply transition-colors;
+    @apply hover:bg-gradient-to-br hover:from-primary hover:to-secondary hover:border-border;
+    @apply hover:bg-gradient-to-br hover:from-primary hover:to-secondary dark:hover:border-border;
   }
 }
