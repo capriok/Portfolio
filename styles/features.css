@@ -16,7 +16,7 @@
   @apply flex min-h-[200px] relative overflow-hidden rounded-lg;
 }
 .feature-card .feature .overlay {
-  @apply hidden md:block z-10 absolute w-[450px] h-[245px] bg-blue-600/10 rounded-lg;
+  @apply bg-blue-400/10 hidden md:block z-10 absolute w-[450px] h-[245px]  rounded-lg;
 }
 .feature-card .feature img {
   @apply hidden md:block w-[450px] h-[245px] rounded-lg;
