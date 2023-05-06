@@ -57,6 +57,8 @@ export default function FullView({ images, view, set }: Props) {
   }
 
   function close() {
+    console.log("close")
+
     set(() => {
       return { open: false, image: 0 }
     })

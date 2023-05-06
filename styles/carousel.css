@@ -20,18 +20,18 @@
   @apply z-10 w-[100vw] h-screen fixed left-0 top-0 grid place-items-center;
 }
 .wide-view .content {
-  @apply w-[98%] h-full pl-0 flex flex-col justify-center items-center;
+  @apply w-[98%]  pl-0 grid place-items-center;
 }
 .wide-view .content img {
   @apply shadow-xl rounded-lg;
 }
 .wide-view .controls {
-  @apply w-[60%] flex items-end;
+  @apply w-[60%] mt-6;
 }
 .wide-view .controls button {
   @apply bg-white w-full;
 }
 
 .wide-view .underlay {
-  @apply z-[-10] w-[100vw] h-screen fixed left-0 top-0 bg-neutral-800/40;
+  @apply z-[-10] w-[100vw] h-screen fixed left-0 top-0 bg-neutral-800/80;
 }

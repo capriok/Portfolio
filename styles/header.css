@@ -19,7 +19,7 @@
   @apply hover:shadow-none hover:bg-none;
 }
 .header .navigation .active {
-  @apply shadow-md;
+  @apply shadow-md bg-neutral-200/40;
 }
 .header .title {
   @apply cursor-pointer m-0 text-3xl font-bold;

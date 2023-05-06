@@ -4,7 +4,6 @@
 .introduction .content {
   @apply w-[80%] md:w-[60%];
 }
-
 .introduction .title {
   @apply text-5xl md:text-7xl mb-6;
 }

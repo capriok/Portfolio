@@ -23,8 +23,9 @@
   }
   .btn {
     @apply cursor-pointer flex justify-center font-bold text-sm rounded-lg py-3 px-8 hover:text-[#4682B4];
-    @apply transition-colors bg-neutral-200/80 border border-neutral-200 shadow-sm;
-    @apply hover:bg-gradient-to-br hover:from-white dark:hover:from-transparent hover:to-neutral-100 dark:hover:bg-transparent hover:border-neutral-200;
+    @apply transition-colors bg-neutral-200/60 border border-neutral-200 shadow-sm;
+    @apply hover:bg-gradient-to-br hover:from-white  hover:to-neutral-100  hover:border-neutral-200;
+    @apply dark:hover:from-red-800  dark:hover:bg-blue-800 hover:border-neutral-200;
   }
   .btn * {
     @apply hover:text-[#4682B4];

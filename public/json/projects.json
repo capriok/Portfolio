@@ -33,7 +33,7 @@
         "Evolved my team development skill working with various organization roles"
       ]
     },
-    "stack": ["TypeScript", "React", "Antd", "Python"],
+    "stack": ["TypeScript", "React", "Antd", "GraphQL", "Python"],
     "tags": ["TypeScript", "React", "GraphQL", "2023"],
     "source": "https://github.com/capriok/",
     "demo": "https://iinfosec.com/cybersecurity-assurance-readiness-csar/",
@@ -58,8 +58,8 @@
         "Evolved my coding style and preferred project structure"
       ]
     },
-    "stack": ["Raspberry Pi", "TypeScript", "React", "Expressjs", "MongoDB"],
-    "tags": ["Raspberry Pi", "Nextjs", "TRPC", "Prisma"],
+    "stack": ["Raspberry Pi", "TypeScript", "React", "TRPC", "MongoDB"],
+    "tags": ["Raspberry Pi", "Nextjs", "TRPC", "2023"],
     "source": "https://github.com/capriok/sweetie",
     "demo": "https://sweetie.kylecaprio.dev",
     "thumb": "/images/SWEETIE-SHOWCASE.jpg",
@@ -73,7 +73,10 @@
       "/images/SWEETIE-GL.jpg",
       "/images/SWEETIE-CS.jpg"
     ],
-    "resources": ["https://www.typescriptlang.org/docs/home.html", "https://devcenter.heroku.com"]
+    "resources": [
+      "https://www.typescriptlang.org/docs/home.html",
+      "https://devcenter.heroku.com"
+    ]
   },
   {
     "title": "AutoSearch",
@@ -89,7 +92,7 @@
       ]
     },
     "stack": ["TypeScript", "NPM", "Rollup", "Jest"],
-    "tags": ["NPM Package", "TypeScript", "Rollup", "2021"],
+    "tags": ["NPM Package", "TypeScript", "Rollup", "2022"],
     "source": "https://github.com/capriok/autoSearch",
     "demo": "https://codesandbox.io/s/autosearch-ltzg7",
     "thumb": "/images/AUTOSEARCH-SANDBOX.jpg",
@@ -127,7 +130,10 @@
       "/images/WORKPOINTS-MARKETPLACE.jpg",
       "/images/WORKPOINTS-VISUAL.gif"
     ],
-    "resources": ["https://code.visualstudio.com/api", "https://marketplace.visualstudio.com"]
+    "resources": [
+      "https://code.visualstudio.com/api",
+      "https://marketplace.visualstudio.com"
+    ]
   },
   {
     "title": "Chatter",
@@ -244,7 +250,10 @@
       "/images/APEXFT-LAPTOP.jpg",
       "/images/APEXFT-TABLET.jpg"
     ],
-    "resources": ["https://www.typescriptlang.org/docs/home.html", "https://nextjs.org/docs"]
+    "resources": [
+      "https://www.typescriptlang.org/docs/home.html",
+      "https://nextjs.org/docs"
+    ]
   },
   {
     "title": "Godspeed",
@@ -293,7 +302,9 @@
     "demo": "https://kylecaprio.dev/env-locker",
     "thumb": "/images/NOT-FOUND.jpg",
     "images": ["/images/NOT-FOUND.jpg"],
-    "resources": ["https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"]
+    "resources": [
+      "https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"
+    ]
   },
   {
     "title": "Cash Flow",
@@ -466,7 +477,14 @@
         "Management of complex core application and component structure"
       ]
     },
-    "stack": ["React", "JavaScript", "CSS", "Electron", "Express.js", "Youtube Data API v3"],
+    "stack": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Electron",
+      "Express.js",
+      "Youtube Data API v3"
+    ],
     "tags": ["JavaScript", "React", "Electron", "CSS", "2019"],
     "source": "https://github.com/capriok/MyTube",
     "demo": "https://mytube-music.kylecaprio.dev",

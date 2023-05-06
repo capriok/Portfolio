@@ -27,7 +27,7 @@ function ProjectView({ project }: Props) {
       )}
       {project.writing.conclusion.length > 0 && (
         <>
-          <h1 className="sub-title">Take Aways</h1>
+          <h1 className="sub-title">Reflection</h1>
           <div className="content">
             {project.writing.conclusion.map((conclusion, i) => (
               <li key={i}>{conclusion}</li>
@@ -35,10 +35,12 @@ function ProjectView({ project }: Props) {
           </div>
         </>
       )}
-      <h1 className="sub-title">Technology stack</h1>
-      <div className="content">
+      <h1 className="sub-title">Technology Stack</h1>
+      <div className="content tags">
         {project.stack.map((stack, i) => (
-          <li key={i}>{stack}</li>
+          <span key={i} className="btn">
+            {stack}
+          </span>
         ))}
       </div>
       {project.resources.length > 0 && (
@@ -55,7 +57,7 @@ function ProjectView({ project }: Props) {
           </div>
         </>
       )}
-      <h1 className="sub-title">Links</h1>
+      <h1 className="sub-title">Explore</h1>
       <div className="links">
         <Link passHref href="/">
           <button className="btn">
