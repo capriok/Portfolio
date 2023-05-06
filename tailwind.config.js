@@ -10,6 +10,7 @@ module.exports = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         foreground: "var(--foreground)",
+        border: "var(--border)",
       },
     },
   },

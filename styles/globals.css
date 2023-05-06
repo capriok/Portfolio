@@ -7,23 +7,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
+:root {
   --background: hsl(0, 0%, 100%);
   --primary: hsl(0, 0%, 96%);
   --secondary: hsl(0, 0%, 94%);
   --foreground: hsl(0, 0%, 0%);
-} */
-
-/* @media (prefers-color-scheme: dark) {
+  --border: hsl(0, 0%, 85%);
+}
+@media (prefers-color-scheme: dark) {
   :root {
-    --background: hsl(0, 0%, 5%);
-    --primary: hsl(0, 0%, 8%);
-    --secondary: hsl(0, 0%, 10%);
+    --background: hsl(200, 6%, 10%);
+    --primary: hsl(200, 5%, 12%);
+    --secondary: hsl(200, 5%, 14%);
     --foreground: hsl(0, 0%, 100%);
+    --border: hsl(0, 0%, 40%);
   }
-} */
+}
 
-html {
+/* html {
   --background: hsl(0, 0%, 100%);
   --primary: hsl(0, 0%, 96%);
   --secondary: hsl(0, 0%, 94%);
@@ -31,11 +32,11 @@ html {
 }
 
 html[data-theme="dark"] {
-  --background: hsl(0, 0%, 5%);
-  --primary: hsl(0, 0%, 8%);
-  --secondary: hsl(0, 0%, 10%);
+  --background: hsl(200, 6%, 10%);
+  --primary: hsl(200, 5%, 12%);
+  --secondary: hsl(200, 5%, 14%);
   --foreground: hsl(0, 0%, 100%);
-}
+} */
 
 ::-webkit-scrollbar {
   @apply relative top-0 right-0 h-[0] w-[8px];

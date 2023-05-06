@@ -3,7 +3,8 @@
 }
 
 .project-card {
-  @apply bg-primary select-none min-h-[210px] flex flex-col justify-between p-4 rounded-md shadow-md hover:shadow-lg;
+  @apply bg-background select-none min-h-[210px] flex flex-col justify-between p-4 rounded-md shadow-md hover:shadow-lg;
+  border: 1px solid var(--border);
 }
 .project-card .head {
   @apply flex w-full;
