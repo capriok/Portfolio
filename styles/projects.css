@@ -49,7 +49,10 @@
   @apply w-full grid grid-cols-3 gap-2;
 }
 .project-view .links .link {
-  @apply flex flex-col justify-center items-center;
+  @apply w-full flex flex-col justify-center items-center;
+}
+.project-view .links .btn {
+  @apply w-full flex flex-col justify-center items-center;
 }
 .project-view .content a {
   @apply underline text-blue-600;
@@ -59,10 +62,10 @@
   @apply w-full flex flex-col justify-center items-center;
 }
 .carousel .content {
-  @apply w-full m-auto;
+  @apply w-full m-auto pb-8 transition-all duration-300 ease-in-out;
 }
 .carousel .image {
-  @apply cursor-pointer max-w-[400px] max-h-[200px] rounded-lg;
+  @apply cursor-pointer max-w-[400px] max-h-[200px] rounded-lg shadow-lg hover:shadow-xl;
 }
 .carousel .controls {
   @apply flex gap-2 my-4;

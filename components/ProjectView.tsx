@@ -16,20 +16,24 @@ function ProjectView({ project }: Props) {
       <h1 className="section-title">{project.title}</h1>
       <Carousel images={project.images} />
       <p className="description">{project.description}</p>
-      <h1 className="sub-title">The Process</h1>
       {project.writing.process && (
-        <div className="content">
-          <p className="process">{project.writing.process}</p>
-          <p className="process">{project.writing.processSub}</p>
-        </div>
+        <>
+          <h1 className="sub-title">The Process</h1>
+          <div className="content">
+            <p className="process">{project.writing.process}</p>
+            <p className="process">{project.writing.processSub}</p>
+          </div>
+        </>
       )}
-      <h1 className="sub-title">Take Aways</h1>
       {project.writing.conclusion.length > 0 && (
-        <div className="content">
-          {project.writing.conclusion.map((conclusion, i) => (
-            <li key={i}>{conclusion}</li>
-          ))}
-        </div>
+        <>
+          <h1 className="sub-title">Take Aways</h1>
+          <div className="content">
+            {project.writing.conclusion.map((conclusion, i) => (
+              <li key={i}>{conclusion}</li>
+            ))}
+          </div>
+        </>
       )}
       <h1 className="sub-title">Technology stack</h1>
       <div className="content">
@@ -37,50 +41,46 @@ function ProjectView({ project }: Props) {
           <li key={i}>{stack}</li>
         ))}
       </div>
-      <h1 className="sub-title">Resources</h1>
       {project.resources.length > 0 && (
-        <div className="content">
-          {project.resources.map((resource, i) => (
-            <li key={i}>
-              <a href={resource} target="_blank" rel="noreferrer" className="resource">
-                {resource}
-              </a>
-            </li>
-          ))}
-        </div>
+        <>
+          <h1 className="sub-title">Resources</h1>
+          <div className="content">
+            {project.resources.map((resource, i) => (
+              <li key={i}>
+                <a href={resource} target="_blank" rel="noreferrer" className="resource">
+                  {resource}
+                </a>
+              </li>
+            ))}
+          </div>
+        </>
       )}
       <h1 className="sub-title">Links</h1>
       <div className="links">
-        <button className="btn">
-          <Link passHref href="/" className="link">
-            <AiOutlineHome className="icon" />
-            Home
-          </Link>
-        </button>
-        <button className="btn">
-          <Link
-            passHref
-            target="_blank"
-            rel="noreferrer"
-            href={project.source}
-            className="link"
-          >
-            <AiFillGithub className="icon" />
-            Github
-          </Link>
-        </button>
-        <button className="btn">
-          <Link
-            passHref
-            target="_blank"
-            rel="noreferrer"
-            href={project.demo}
-            className="link"
-          >
-            <RiExternalLinkFill className="icon" />
-            Demo
-          </Link>
-        </button>
+        <Link passHref href="/">
+          <button className="btn">
+            <div className="link">
+              <AiOutlineHome className="icon" />
+              Home
+            </div>
+          </button>
+        </Link>
+        <Link passHref target="_blank" rel="noreferrer" href={project.source}>
+          <button className="btn">
+            <div className="link">
+              <AiFillGithub className="icon" />
+              Github
+            </div>
+          </button>
+        </Link>
+        <Link passHref target="_blank" rel="noreferrer" href={project.demo}>
+          <button className="btn">
+            <div className="link">
+              <RiExternalLinkFill className="icon" />
+              Demo
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   )
