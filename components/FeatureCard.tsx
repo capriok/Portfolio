@@ -26,7 +26,9 @@ export default function FeaturedCard({ project, index }: Props) {
             <h1 className="title">{project.title}</h1>
           </Link>
           <p
-            className={`description  ${isLtr ? "group-hover:mr-2" : "group-hover:ml-2"}`}
+            className={`description  ${
+              isLtr ? "group-hover:md:mr-2" : "group-hover:md:ml-2"
+            }`}
           >
             {project.description}
           </p>

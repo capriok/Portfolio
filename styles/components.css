@@ -10,12 +10,15 @@
 @import "./contact.css";
 @import "./carousel.css";
 
+@layer base {
+  section {
+    @apply my-[25px] md:my-[100px] mb-[25px] md:mb-[125px];
+  }
+}
+
 @layer components {
   .section-title {
     @apply text-3xl font-bold mt-14 mb-8;
-  }
-  section {
-    @apply my-[100px] md:mb-[125px];
   }
 
   .btns {

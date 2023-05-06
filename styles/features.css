@@ -6,7 +6,8 @@
   @apply flex flex-col;
 }
 .feature-card {
-  @apply select-none relative mb-[120px];
+  @apply select-none relative;
+  @apply mb-[80px] md:mb-[120px];
 }
 .feature-card * {
   @apply transition-all duration-300 ease-in-out;

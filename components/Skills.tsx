@@ -47,7 +47,7 @@ export default function Skills() {
   const Icons = ({ children, t }) => tab[t] && children
 
   return (
-    <div className="section skills">
+    <section className="skills">
       <h1 className="section-title">Technology</h1>
       <div className="flipper">
         <div className="tabs">
@@ -111,6 +111,6 @@ export default function Skills() {
           </Icons>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

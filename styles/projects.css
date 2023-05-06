@@ -3,18 +3,21 @@
 }
 
 .project-card {
-  @apply select-none min-h-[220px] flex flex-col justify-between align-top p-4 rounded-md border shadow-md hover:shadow-lg;
+  @apply select-none min-h-[210px] flex flex-col justify-between p-4 rounded-md border shadow-md hover:shadow-lg;
   @apply transition-colors hover:bg-gradient-to-br hover:from-white dark:hover:from-transparent hover:to-neutral-100 dark:hover:bg-transparent hover:border-neutral-200;
 }
 .project-card .head {
   @apply flex w-full;
 }
 .project-card .head-title {
-  @apply flex-1 text-lg mb-0;
+  @apply flex-1 text-lg mb-2;
   @apply hover:ml-1 transition-all duration-200;
 }
 .project-card .head-icon {
   @apply text-2xl ml-2;
+}
+.project-card .description {
+  @apply h-full;
 }
 .project-card .foot-icon {
   @apply text-2xl ml-4 hover:text-[#4682B4];
