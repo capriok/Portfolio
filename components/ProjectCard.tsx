@@ -17,25 +17,28 @@ function ProjectCard({ project }: Props) {
             {project.title}
           </Link>
         </h1>
-        <div className="icon">
-          <div className="head-icon">
-            <AiOutlineFolder />
-          </div>
-        </div>
       </div>
       <div className="description">
         <div>{project.description}</div>
       </div>
       <div className="foot">
-        <Link passHref href={`${project.source}`} target="_blank" rel="noreferrer">
-          <div className="foot-icon">
-            <AiFillGithub />
-          </div>
+        <Link
+          passHref
+          target="_blank"
+          rel="noreferrer"
+          href={`${project.source}`}
+          className="foot-icon"
+        >
+          <AiFillGithub />
         </Link>
-        <Link passHref href={`${project.demo}`} target="_blank" rel="noreferrer">
-          <div className="foot-icon">
-            <RiExternalLinkFill />
-          </div>
+        <Link
+          passHref
+          target="_blank"
+          rel="noreferrer"
+          href={`${project.demo}`}
+          className="foot-icon"
+        >
+          <RiExternalLinkFill />
         </Link>
       </div>
     </div>

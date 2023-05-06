@@ -14,9 +14,7 @@ function ProjectView({ project }: Props) {
   return (
     <div className="project-view">
       <h1 className="section-title">{project.title}</h1>
-      <div>
-        <Carousel images={project.images} />
-      </div>
+      <Carousel images={project.images} />
       <p className="description">{project.description}</p>
       <h1 className="sub-title">The Process</h1>
       {project.writing.process && (
@@ -53,40 +51,34 @@ function ProjectView({ project }: Props) {
       )}
       <h1 className="sub-title">Links</h1>
       <div className="links">
-        <button className="btn btn-icon">
+        <button className="btn">
           <Link passHref href="/" className="link">
-            <p>
-              <AiOutlineHome />
-            </p>
-            <p>Home</p>
+            <AiOutlineHome className="icon" />
+            Home
           </Link>
         </button>
-        <button className="btn btn-icon">
+        <button className="btn">
           <Link
             passHref
+            target="_blank"
+            rel="noreferrer"
             href={project.source}
             className="link"
-            target="_blank"
-            rel="noreferrer"
           >
-            <p>
-              <AiFillGithub />
-            </p>
-            <p>Github</p>
+            <AiFillGithub className="icon" />
+            Github
           </Link>
         </button>
-        <button className="btn btn-icon">
+        <button className="btn">
           <Link
             passHref
-            href={project.demo}
-            className="link"
             target="_blank"
             rel="noreferrer"
+            href={project.demo}
+            className="link"
           >
-            <p>
-              <RiExternalLinkFill />
-            </p>
-            <p>Demo</p>
+            <RiExternalLinkFill className="icon" />
+            Demo
           </Link>
         </button>
       </div>

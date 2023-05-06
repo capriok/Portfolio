@@ -1,22 +1,21 @@
-.about-content {
+.about .content {
   @apply w-full max-w-[800px] mx-auto my-0 mb-10;
 }
-
-.about-info-indent {
+.about .indent {
   @apply indent-6;
 }
-.about-info-title {
+.about .title {
   @apply text-2xl font-bold my-4;
 }
-.about-info-item {
+.about .item {
   @apply mx-2 my-6;
 }
-.about-info-time {
+.about .time {
   @apply text-neutral-800;
 }
-.about-info-company {
+.about .company {
   @apply mb-2 font-bold;
 }
-.about-info-bullets {
+.about .bullets {
   @apply ml-6 list-disc;
 }

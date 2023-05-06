@@ -1,0 +1,16 @@
+.introduction {
+  @apply grid place-items-center w-full h-[calc(100vh-100px)];
+}
+.introduction .content {
+  @apply w-[80%] md:w-[60%];
+}
+
+.introduction .title {
+  @apply text-5xl md:text-7xl mb-6;
+}
+.introduction .sub-title {
+  @apply text-xl md:text-3xl mb-2;
+}
+.introduction .crumb {
+  @apply mb-2;
+}

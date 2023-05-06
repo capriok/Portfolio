@@ -53,10 +53,10 @@ export default function Carousel({ images }: Props) {
         />
         <div className="controls">
           <button className="btn" onClick={() => ref.slidePrev()}>
-            <MdChevronLeft />
+            <MdChevronLeft className="icon" />
           </button>
           <button className="btn" onClick={() => ref.slideNext()}>
-            <MdChevronRight />
+            <MdChevronRight className="icon" />
           </button>
         </div>
       </div>

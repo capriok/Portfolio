@@ -1,5 +1,5 @@
 .header {
-  @apply bg-white z-50 sticky select-none top-0 w-full h-[100px] flex justify-between items-center px-4;
+  @apply bg-white z-50 sticky select-none top-0 w-full h-[75px] flex justify-between items-center px-4;
 }
 .header .content {
   @apply flex justify-between w-full max-w-[1000px] mx-auto p-0;

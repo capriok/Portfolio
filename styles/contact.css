@@ -2,7 +2,7 @@
   @apply flex flex-col justify-center items-center;
 }
 .contact .content {
-  @apply select-none flex flex-col justify-center items-center;
+  @apply m-0 select-none flex flex-col justify-center items-center;
 }
 .contact .content .title {
   @apply text-2xl font-bold;

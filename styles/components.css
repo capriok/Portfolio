@@ -2,8 +2,9 @@
 @import "./resume.css";
 @import "./layout.css";
 @import "./header.css";
-@import "./home.css";
 @import "./about.css";
+@import "./introduction.css";
+@import "./skills.css";
 @import "./features.css";
 @import "./projects.css";
 @import "./contact.css";
@@ -12,14 +13,20 @@
   .section-title {
     @apply text-3xl font-bold mt-14 mb-8;
   }
+  .section {
+    @apply mb-[50px] md:mb-[125px] transition-all delay-200;
+  }
 
-  .btn {
-    @apply cursor-pointer flex justify-center font-bold text-sm rounded-lg px-4 py-2;
-  }
-  .btn-icon {
-    @apply text-lg font-bold py-3 px-8 hover:text-[#4682B4];
-  }
   .btns {
     @apply flex gap-2 m-2;
+  }
+  .btn {
+    @apply cursor-pointer flex justify-center font-bold text-sm rounded-lg py-3 px-8 hover:text-[#4682B4];
+  }
+  .btn * {
+    @apply hover:text-[#4682B4];
+  }
+  .btn .icon {
+    @apply text-lg font-bold hover:text-[#4682B4];
   }
 }

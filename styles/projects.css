@@ -3,10 +3,12 @@
 }
 
 .project-card {
-  @apply select-none min-h-[220px] flex flex-col justify-between align-top p-4 rounded-md border shadow-md;
+  @apply select-none min-h-[220px] flex flex-col justify-between align-top p-4 rounded-md border shadow-md hover:shadow-lg;
+  @apply transition-all duration-300 ease-in-out;
+  @apply hover:bg-gradient-to-br hover:from-white hover:to-neutral-50;
 }
 .project-card .head {
-  @apply flex w-full pb-2;
+  @apply flex w-full;
 }
 .project-card .head-title {
   @apply flex-1 text-lg mb-0;
@@ -15,7 +17,8 @@
   @apply text-2xl ml-2;
 }
 .project-card .foot-icon {
-  @apply text-xl ml-2;
+  @apply text-xl ml-2 hover:text-[#4682B4];
+  @apply transition-all duration-300 ease-in-out;
 }
 .project-card .foot {
   @apply flex justify-end w-full pt-4;
@@ -48,10 +51,7 @@
 .project-view .links .link {
   @apply flex flex-col justify-center items-center;
 }
-.project-view .links > div {
-  @apply flex justify-center items-center bg-red-200;
-}
-.project-view .content > li > a {
+.project-view .content a {
   @apply underline text-blue-600;
 }
 
@@ -62,13 +62,13 @@
   @apply w-full m-auto;
 }
 .carousel .image {
-  @apply max-w-[400px] max-h-[200px] rounded-lg;
+  @apply cursor-pointer max-w-[400px] max-h-[200px] rounded-lg;
 }
 .carousel .controls {
   @apply flex gap-2 my-4;
 }
-.carousel .controls link p {
-  @apply mb-4;
+.carousel .controls .btn {
+  @apply mb-4 py-2;
 }
 
 .wide-view {
