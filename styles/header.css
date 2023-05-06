@@ -8,12 +8,15 @@
   @apply flex align-bottom;
 }
 .header .nav-item {
-  @apply flex items-center ml-6 bg-white rounded-lg;
+  @apply bg-white flex items-center  rounded-lg  ml-2;
 }
 .header .navigation .btn {
-  @apply transition-all duration-200 ease-in-out;
-  @apply flex items-center py-2 ml-2 w-[100px] font-semibold shadow-none hover:border-b-transparent;
+  @apply flex items-center py-2 px-2 md:px-6 ml-2 md:w-[100px] font-semibold shadow-none hover:border-b-transparent;
+  @apply transition-colors border-none;
   @apply hover:shadow-md;
+}
+.header .navigation .contact {
+  @apply hover:shadow-none hover:bg-none;
 }
 .header .navigation .active {
   @apply shadow-md;

@@ -4,11 +4,7 @@
 
 .project-card {
   @apply select-none min-h-[220px] flex flex-col justify-between align-top p-4 rounded-md border shadow-md hover:shadow-lg;
-  @apply transition-colors hover:bg-gradient-to-br;
-}
-.project-card:hover {
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
+  @apply hover:bg-gradient-to-br hover:from-white dark:hover:from-transparent hover:to-neutral-100 dark:hover:bg-transparent hover:border-neutral-200;
 }
 .project-card .head {
   @apply flex w-full;
@@ -44,7 +40,10 @@
   @apply text-2xl py-2;
 }
 .project-view .content {
-  @apply pl-8 pb-2;
+  @apply pl-4 md:pl-8 pb-2;
+}
+.project-view .content {
+  @apply overflow-hidden;
 }
 .project-view .process {
   @apply indent-4 pb-2;
@@ -60,40 +59,4 @@
 }
 .project-view .content a {
   @apply underline text-blue-600;
-}
-
-.carousel {
-  @apply w-full flex flex-col justify-center items-center;
-}
-.carousel .content {
-  @apply w-full m-auto pb-8 transition-all duration-300 ease-in-out;
-}
-.carousel .image {
-  @apply cursor-pointer max-w-[400px] max-h-[200px] rounded-lg shadow-lg hover:shadow-xl;
-}
-.carousel .controls {
-  @apply flex gap-2 my-4;
-}
-.carousel .controls .btn {
-  @apply mb-4 py-2;
-}
-
-.wide-view {
-  @apply z-10 w-[100vw] h-screen fixed left-0 top-0 grid place-items-center;
-}
-.wide-view .content {
-  @apply w-[95%];
-}
-.wide-view .content img {
-  @apply shadow-xl rounded-lg;
-}
-.wide-view .controls {
-  @apply w-full flex justify-center items-center;
-}
-.wide-view .controls button {
-  @apply bg-white;
-}
-
-.wide-view .underlay {
-  @apply z-[-10] w-[100vw] h-screen fixed left-0 top-0 bg-neutral-800/40;
 }

@@ -6,9 +6,9 @@ export default async function Work() {
   const projects = getProjects(true)
 
   return (
-    <div className="page">
+    <>
       <ProjectList projects={projects} paginated={false} />
       <Contact />
-    </div>
+    </>
   )
 }

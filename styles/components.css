@@ -8,6 +8,7 @@
 @import "./features.css";
 @import "./projects.css";
 @import "./contact.css";
+@import "./carousel.css";
 
 @layer components {
   .section-title {
@@ -22,11 +23,8 @@
   }
   .btn {
     @apply cursor-pointer flex justify-center font-bold text-sm rounded-lg py-3 px-8 hover:text-[#4682B4];
-    @apply transition-colors hover:bg-gradient-to-br;
-    background: rgb(var(--btn-rgb));
-  }
-  .btn:hover {
-    background: linear-gradient(145deg, transparent, var(--btn-hover));
+    @apply transition-colors bg-neutral-200/80 border border-neutral-200 shadow-sm;
+    @apply hover:bg-gradient-to-br hover:from-white dark:hover:from-transparent hover:to-neutral-100 dark:hover:bg-transparent hover:border-neutral-200;
   }
   .btn * {
     @apply hover:text-[#4682B4];

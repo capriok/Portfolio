@@ -10,7 +10,7 @@ export default function About() {
       <h1 className="section-title">About me</h1>
       <div className="content">
         <h1 className="title">Background</h1>
-        <p className="indent">
+        <p className="time">
           My name is Kyle. Im a self taught software engineer based in Arizona. I found my
           passion for learning computer sciences at the age of 16 and have been
           programming ever since. Being able to effectively teach myself is something I am
@@ -25,29 +25,31 @@ export default function About() {
         </p>
         <h1 className="title">Experience</h1>
         <ul>
-          {experience.map((exp) => (
-            <li key={exp.occupation + exp.company} className="item">
+          {experience.map((exp, i) => (
+            <div key={i} className="item">
               <div className="time">{exp.timeFrame}</div>
               <div className="company">
-                {exp.occupation} - {exp.company}
+                <b>
+                  {exp.occupation} - {exp.company}
+                </b>
               </div>
               <ul className="bullets">
                 {exp.bullets.map((bullet, i) => (
                   <li key={i}>{bullet}</li>
                 ))}
               </ul>
-            </li>
+            </div>
           ))}
         </ul>
         <h1 className="title">Education</h1>
         <ul>
-          <li>
-            <p className="time">Graduated Feb 2022</p>
-            <p>
+          <div className="item">
+            <div className="time">Graduated Feb 2022</div>
+            <div>
               <b>Rasmussen University</b> - Deans List, 3.97 GPA
-            </p>
-            <p className="indent">Associate of Science Degree, Web Programming</p>
-          </li>
+            </div>
+            <div className="time pl-2">Associate of Science Degree, Web Programming</div>
+          </div>
         </ul>
       </div>
       <Contact />

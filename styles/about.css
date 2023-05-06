@@ -1,21 +1,21 @@
 .about .content {
-  @apply w-full max-w-[800px] mx-auto my-0 mb-10;
+  @apply w-full md:w-[80%] mx-auto my-0 mb-10;
 }
 .about .indent {
   @apply indent-6;
 }
 .about .title {
-  @apply text-2xl font-bold my-4;
+  @apply text-2xl my-4;
 }
 .about .item {
-  @apply mx-2 my-6;
+  @apply mx-2 mt-2 mb-6;
 }
 .about .time {
   @apply text-neutral-800;
 }
 .about .company {
-  @apply mb-2 font-bold;
+  @apply mb-2;
 }
 .about .bullets {
-  @apply ml-6 list-disc;
+  @apply ml-6;
 }

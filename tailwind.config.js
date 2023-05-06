@@ -8,6 +8,11 @@ module.exports = {
   darkMode: ["class", '[data-mode="dark"]'],
   variants: ["dark", "dark-hover", "dark-group-hover", "dark-even", "dark-odd"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "var(--background)",
+        gradient: "var(--gradient)",
+      },
+    },
   },
 }

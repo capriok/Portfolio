@@ -34,7 +34,7 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
             href="https://mail.google.com/mail/u/0/?fs=1&to=capriokdev@gmail.com&su=Portfolio%20Inquiry&tf=cm"
-            className="nav-item"
+            className="nav-item btn contact"
           >
             <div>Contact</div>
           </Link>
