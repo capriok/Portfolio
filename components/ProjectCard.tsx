@@ -9,7 +9,7 @@ interface Props {
 
 function ProjectCard({ project }: Props) {
   return (
-    <div className="project-card">
+    <div className="project-card dark:hover:bg-black">
       <div className="head">
         <h1 className="head-title">
           <Link passHref href={`/${project.slug}`}>

@@ -1,5 +1,5 @@
 .header {
-  @apply bg-white z-50 sticky select-none top-0 w-full h-[75px] flex justify-between items-center px-4;
+  @apply bg-white/95 z-50 sticky select-none top-0 w-full h-[75px] flex justify-between items-center px-4;
 }
 .header .content {
   @apply flex justify-between w-full max-w-[1000px] mx-auto p-0;
@@ -8,15 +8,15 @@
   @apply flex align-bottom;
 }
 .header .nav-item {
-  @apply flex items-center ml-6;
+  @apply flex items-center ml-6 bg-white rounded-lg;
 }
 .header .navigation .btn {
   @apply transition-all duration-200 ease-in-out;
-  @apply flex items-center py-2 ml-2 w-[100px] shadow-none hover:border-b-transparent;
+  @apply flex items-center py-2 ml-2 w-[100px] font-semibold shadow-none hover:border-b-transparent;
   @apply hover:shadow-md;
 }
 .header .navigation .active {
-  @apply shadow-lg;
+  @apply shadow-md;
 }
 .header .title {
   @apply cursor-pointer m-0 text-3xl font-bold;

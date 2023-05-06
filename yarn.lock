@@ -2106,13 +2106,6 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-hooks-lab@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-hooks-lab/-/react-hooks-lab-1.0.4.tgz#771441f7c3199ae123f5a63e2b8e68bd671ea940"
-  integrity sha512-gBKwgef4Tnn6I+ITdfjqVTZgcKPnQ8wJklxkC12yUq3Kcx3woEUCROY3AgY9puBC9v7jBS+dhofI/QM9r2OFTQ==
-  dependencies:
-    use-debounce "^2.0.0"
-
 react-icons@^4.8.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.8.0.tgz#621e900caa23b912f737e41be57f27f6b2bff445"
@@ -2557,11 +2550,6 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
-
-use-debounce@^2.0.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-2.2.1.tgz#0b50e98486a17084c2ba063467ea4cd06071fa3d"
-  integrity sha512-5+8dPOaSecXG+hsjjqDu57k+sIfRLQ2fyRVTq8Q+tK2XYLT3FmBxVy3B+C8l33mLuFkiVu6uE5JqbuQIruxh/g==
 
 util-deprecate@^1.0.2:
   version "1.0.2"

@@ -22,8 +22,11 @@
   }
   .btn {
     @apply cursor-pointer flex justify-center font-bold text-sm rounded-lg py-3 px-8 hover:text-[#4682B4];
-    @apply transition-colors hover:bg-gradient-to-br hover:from-white hover:to-neutral-50;
-    @apply shadow-md hover:bg-white transition-colors;
+    @apply transition-colors hover:bg-gradient-to-br;
+    background: rgb(var(--btn-rgb));
+  }
+  .btn:hover {
+    background: linear-gradient(145deg, transparent, var(--btn-hover));
   }
   .btn * {
     @apply hover:text-[#4682B4];

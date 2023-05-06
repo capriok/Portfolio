@@ -4,7 +4,11 @@
 
 .project-card {
   @apply select-none min-h-[220px] flex flex-col justify-between align-top p-4 rounded-md border shadow-md hover:shadow-lg;
-  @apply transition-colors hover:bg-gradient-to-br hover:from-white hover:to-neutral-50;
+  @apply transition-colors hover:bg-gradient-to-br;
+}
+.project-card:hover {
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
 }
 .project-card .head {
   @apply flex w-full;

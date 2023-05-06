@@ -9,7 +9,7 @@ export default function Header() {
     const itemCn = (r) => (r === pathname ? "nav-item btn active" : "nav-item btn")
     return (
       <Link passHref href={href} className={itemCn(href)}>
-        <h1>{children}</h1>
+        {children}
       </Link>
     )
   }
@@ -21,13 +21,13 @@ export default function Header() {
         </Link>
         <div className="navigation">
           <NavLink href="/about">
-            <h1>About</h1>
+            <div>About</div>
           </NavLink>
           <NavLink href="/work">
-            <h1>Work</h1>
+            <div>Work</div>
           </NavLink>
           <NavLink href="/resume">
-            <h1>Resume</h1>
+            <div>Resume</div>
           </NavLink>
           <Link
             passHref
@@ -36,7 +36,7 @@ export default function Header() {
             href="https://mail.google.com/mail/u/0/?fs=1&to=capriokdev@gmail.com&su=Portfolio%20Inquiry&tf=cm"
             className="nav-item"
           >
-            <h1>Contact</h1>
+            <div>Contact</div>
           </Link>
         </div>
       </div>

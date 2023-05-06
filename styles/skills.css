@@ -24,7 +24,11 @@
 }
 .skills .tabs .active {
   @apply shadow-lg bg-neutral-100/80;
-  @apply transition-colors hover:bg-gradient-to-br hover:from-white hover:to-neutral-50;
+  @apply transition-colors hover:bg-gradient-to-br;
+}
+.skills .tabs .active:hover {
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
 }
 .skills .content {
   @apply w-full flex flex-wrap md:flex-nowrap justify-center items-center;
