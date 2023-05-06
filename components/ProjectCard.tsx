@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-import { AiOutlineFolder } from "react-icons/ai"
 import { AiFillGithub } from "react-icons/ai"
 import { RiExternalLinkFill } from "react-icons/ri"
 

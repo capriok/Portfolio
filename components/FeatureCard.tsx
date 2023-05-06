@@ -40,10 +40,10 @@ export default function FeaturedCard({ project, index }: Props) {
           <div className="foot">
             <div className="nav-icons">
               <Link passHref href={`${project.source}`} target="_blank" rel="noreferrer">
-                <AiFillGithub />
+                <AiFillGithub className="hover" />
               </Link>
               <Link passHref href={`${project.demo}`} target="_blank" rel="noreferrer">
-                <RiExternalLinkFill />
+                <RiExternalLinkFill className="hover" />
               </Link>
             </div>
           </div>

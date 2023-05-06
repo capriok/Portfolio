@@ -10,20 +10,21 @@
 .skills .tabs {
   @apply w-full flex md:justify-center overflow-x-scroll md:overflow-visible;
 }
-.skills .tabs .r-end {
+.skills .tabs .r {
   @apply rounded-tl-none rounded-bl-none;
 }
-.skills .tabs .center {
+.skills .tabs .c {
   @apply rounded-none;
 }
-.skills .tabs .l-end {
+.skills .tabs .l {
   @apply rounded-tr-none rounded-br-none;
 }
 .skills .tabs .tab {
   @apply w-full flex flex-col justify-center items-center text-xs md:text-sm p-2 cursor-pointer font-normal bg-white;
 }
 .skills .tabs .active {
-  @apply shadow-xl bg-neutral-100;
+  @apply shadow-lg bg-neutral-100/80;
+  @apply transition-colors hover:bg-gradient-to-br hover:from-white hover:to-neutral-50;
 }
 .skills .content {
   @apply w-full flex flex-wrap md:flex-nowrap justify-center items-center;

@@ -1,5 +1,5 @@
 .resume {
-  @apply hidden md:block;
+  @apply h-full hidden md:block;
 }
 .resume-mobile {
   @apply md:hidden flex justify-center mt-10;

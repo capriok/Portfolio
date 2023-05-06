@@ -51,23 +51,23 @@ export default function Skills() {
       <h1 className="section-title">Technology</h1>
       <div className="flipper">
         <div className="tabs">
-          <button className={tabCn("a", "l-end")} onClick={() => handleSet("a")}>
+          <button className={tabCn("a", "l")} onClick={() => handleSet("a")}>
             <div>Storage and</div>
             <div>Deployment</div>
           </button>
-          <button className={tabCn("b", "center")} onClick={() => handleSet("b")}>
+          <button className={tabCn("b", "c")} onClick={() => handleSet("b")}>
             <div>Programming </div>
             <div>Languages</div>
           </button>
-          <button className={tabCn("c", "center")} onClick={() => handleSet("c")}>
+          <button className={tabCn("c", "c")} onClick={() => handleSet("c")}>
             <div>Front-end </div>
             <div>Technologies</div>
           </button>
-          <button className={tabCn("d", "center")} onClick={() => handleSet("d")}>
+          <button className={tabCn("d", "c")} onClick={() => handleSet("d")}>
             <div>Back-end </div>
             <div>Technologies</div>
           </button>
-          <button className={tabCn("e", "r-end")} onClick={() => handleSet("e")}>
+          <button className={tabCn("e", "r")} onClick={() => handleSet("e")}>
             <div>Database </div>
             <div>Technologies</div>
           </button>

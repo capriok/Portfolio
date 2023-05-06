@@ -9,10 +9,10 @@ export default function Header() {
         </Link>
         <div className="navigation">
           <Link className="nav-item" passHref href="/about">
-            <span className="mono">About</span>
+            <h1>About</h1>
           </Link>
           <Link className="nav-item" passHref href="/work">
-            <span className="mono">Work</span>
+            <h1>Work</h1>
           </Link>
           <Link
             className="nav-item"
@@ -21,10 +21,10 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="mono">Contact</span>
+            <h1>Contact</h1>
           </Link>
           <Link className="nav-item" passHref href="/resume">
-            <span className="mono">Resume</span>
+            <h1>Resume</h1>
           </Link>
         </div>
       </div>

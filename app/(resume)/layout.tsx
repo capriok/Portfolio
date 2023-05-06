@@ -23,9 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className="resume-layout">
-          <main>{children}</main>
-        </div>
+        <div className="resume-layout">{children}</div>
       </body>
     </html>
   )

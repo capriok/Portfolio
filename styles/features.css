@@ -22,7 +22,7 @@
 }
 
 .feature-card .content {
-  @apply w-full h-full absolute flex justify-center flex-col;
+  @apply w-full h-full absolute flex justify-start flex-col;
 }
 .feature-card .content .pre-title {
   @apply text-[#4682B4];

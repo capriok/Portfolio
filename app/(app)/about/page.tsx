@@ -9,7 +9,7 @@ export default function About() {
     <div className="about">
       <h1 className="section-title">About me</h1>
       <div className="content">
-        <h1 className="info-title">Background</h1>
+        <h1 className="title">Background</h1>
         <p className="indent">
           My name is Kyle. Im a self taught software engineer based in Arizona. I found my
           passion for learning computer sciences at the age of 16 and have been

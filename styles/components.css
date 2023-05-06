@@ -22,12 +22,16 @@
   }
   .btn {
     @apply cursor-pointer flex justify-center font-bold text-sm rounded-lg py-3 px-8 hover:text-[#4682B4];
-    @apply bg-neutral-50 border-neutral-50 shadow-md hover:bg-white transition-colors;
+    @apply shadow-md hover:bg-white transition-colors;
+    @apply transition-colors hover:bg-gradient-to-br hover:from-white hover:to-neutral-50;
   }
   .btn * {
     @apply hover:text-[#4682B4];
   }
   .btn .icon {
     @apply text-lg font-bold hover:text-[#4682B4];
+  }
+  .hover {
+    @apply hover:text-[#4682B4] transition-colors;
   }
 }
