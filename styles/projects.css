@@ -55,8 +55,8 @@
   @apply w-full flex gap-2;
 }
 .project-view .tags .btn {
-  @apply bg-primary shadow-md text-white hover:text-white cursor-default font-normal;
-  @apply py-1 px-3 hover:bg-none hover:shadow-none;
+  @apply bg-primary shadow-sm text-foreground hover:text-foreground cursor-default font-normal;
+  @apply py-1 px-3 hover:bg-none;
 }
 .project-view .links {
   @apply w-full grid grid-cols-3 gap-2;

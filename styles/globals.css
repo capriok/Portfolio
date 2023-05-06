@@ -15,7 +15,7 @@
 }
 :root {
   --background: hsl(0, 0%, 100%);
-  --primary: hsl(0, 0%, 90%);
+  --primary: hsl(0, 0%, 95%);
   --secondary: hsl(0, 0%, 85%);
   --border: hsl(0, 0%, 85%);
   --foreground: hsl(0, 0%, 0%);
@@ -38,10 +38,12 @@
   @apply bg-neutral-800;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  @apply p-0 m-0 text-[14.5px];
+@layer base {
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    @apply p-0 m-0 text-[14.5px];
+  }
 }
 
 html {
