@@ -14,6 +14,7 @@
   --foreground: hsl(0, 0%, 0%);
   --border: hsl(0, 0%, 85%);
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: hsl(200, 6%, 10%);
