@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
 
-  c: {
+  images: {
     domains: ["kiles.s3.us-west-1.amazonaws.com"],
   },
 }
