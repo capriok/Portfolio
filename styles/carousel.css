@@ -13,7 +13,7 @@
   @apply flex gap-2 my-4;
 }
 .carousel .controls .btn {
-  @apply mb-4 py-2;
+  @apply bg-primary mb-4 py-2;
 }
 
 .wide-view {
@@ -29,7 +29,7 @@
   @apply w-[60%] mt-6;
 }
 .wide-view .controls button {
-  @apply bg-white w-full;
+  @apply w-full;
 }
 
 .wide-view .underlay {

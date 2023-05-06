@@ -5,7 +5,13 @@ module.exports = {
   variants: ["dark", "dark-hover", "dark-group-hover", "dark-even", "dark-odd"],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        background: "var(--background)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        border: "var(--border)",
+        foreground: "var(--foreground)",
+      },
     },
   },
 }

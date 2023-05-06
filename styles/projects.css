@@ -4,7 +4,7 @@
 
 .project-card {
   @apply select-none min-h-[210px] flex flex-col justify-between p-4 rounded-md border shadow-md hover:shadow-lg;
-  @apply transition-colors hover:bg-gradient-to-br hover:from-white dark:hover:from-transparent hover:to-neutral-100 dark:hover:bg-transparent hover:border-neutral-200;
+  @apply transition-colors hover:bg-gradient-to-br hover:from-primary  hover:to-secondary  hover:border-border;
 }
 .project-card .head {
   @apply flex w-full;
@@ -55,7 +55,7 @@
   @apply w-full flex gap-2;
 }
 .project-view .tags .btn {
-  @apply bg-neutral-800/95 text-white hover:text-white cursor-default font-normal;
+  @apply bg-primary shadow-md text-white hover:text-white cursor-default font-normal;
   @apply py-1 px-3 hover:bg-none hover:shadow-none;
 }
 .project-view .links {

@@ -13,14 +13,34 @@
   height: 0;
   width: 8px;
 }
+:root {
+  --background: hsl(0, 0%, 100%);
+  --primary: hsl(0, 0%, 90%);
+  --secondary: hsl(0, 0%, 85%);
+  --border: hsl(0, 0%, 85%);
+  --foreground: hsl(0, 0%, 0%);
+}
+
+@media (theme: dark) {
+  :root {
+    --background: hsl(0, 0%, 8%);
+    --primary: hsl(0, 0%, 6%);
+    --secondary: hsl(0, 0%, 20%);
+    --border: hsl(0, 0%, 20%);
+    --foreground: hsl(0, 0%, 100%);
+  }
+}
+
 ::-webkit-scrollbar-track {
-  @apply bg-neutral-800/20;
+  @apply bg-primary;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-neutral-800/50 rounded-md;
+  @apply bg-neutral-800;
 }
 
 body {
+  color: var(--foreground);
+  background: var(--background);
   @apply p-0 m-0 text-[14.5px];
 }
 
