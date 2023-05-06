@@ -10,7 +10,7 @@ export default function About() {
       <h1 className="section-title">About me</h1>
       <div className="content">
         <h1 className="title">Background</h1>
-        <p className="time">
+        <p className="indent">
           My name is Kyle. Im a self taught software engineer based in Arizona. I found my
           passion for learning computer sciences at the age of 16 and have been
           programming ever since. Being able to effectively teach myself is something I am
@@ -48,7 +48,7 @@ export default function About() {
             <div>
               <b>Rasmussen University</b> - Deans List, 3.97 GPA
             </div>
-            <div className="time pl-2">Associate of Science Degree, Web Programming</div>
+            <div className="pl-2">Associate of Science Degree, Web Programming</div>
           </div>
         </ul>
       </div>

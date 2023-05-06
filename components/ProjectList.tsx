@@ -23,12 +23,12 @@ export default function ProjectList({ projects, paginated }: Props) {
       {paginated && (
         <div className="controls">
           {pg > 6 && (
-            <button className="btn" onClick={() => setPg(pg - 3)}>
+            <button className="btn gradient-hover" onClick={() => setPg(pg - 3)}>
               <MdExpandLess className="icon" />
             </button>
           )}
           {pg <= projects.length && (
-            <button className="btn" onClick={() => setPg(pg + 3)}>
+            <button className="btn gradient-hover" onClick={() => setPg(pg + 3)}>
               <MdExpandMore className="icon" />
             </button>
           )}

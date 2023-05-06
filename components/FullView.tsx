@@ -57,10 +57,10 @@ export default function FullView({ images, view, set }: Props) {
           height={1005}
         />
         <div className="controls btns">
-          <button className="btn btn-icon" onClick={() => prevImage()}>
+          <button className="btn btn-icon gradient-hover" onClick={() => prevImage()}>
             <MdChevronLeft />
           </button>
-          <button className="btn btn-icon" onClick={() => nextImage()}>
+          <button className="btn btn-icon gradient-hover" onClick={() => nextImage()}>
             <MdChevronRight />
           </button>
         </div>

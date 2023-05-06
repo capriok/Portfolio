@@ -52,10 +52,10 @@ export default function Carousel({ images }: Props) {
           ))}
         />
         <div className="controls">
-          <button className="btn" onClick={() => ref.slidePrev()}>
+          <button className="btn gradient-hover" onClick={() => ref.slidePrev()}>
             <MdChevronLeft className="icon" />
           </button>
-          <button className="btn" onClick={() => ref.slideNext()}>
+          <button className="btn gradient-hover" onClick={() => ref.slideNext()}>
             <MdChevronRight className="icon" />
           </button>
         </div>

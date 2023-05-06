@@ -12,7 +12,7 @@ export default function Resume() {
       </div>
       <div className="resume-mobile">
         <a href={PrimaryPDF!} target="_blank" rel="noreferrer">
-          <button className="resume-cta">View Resume</button>
+          <button className="btn gradient-hover">View Resume</button>
         </a>
       </div>
     </>

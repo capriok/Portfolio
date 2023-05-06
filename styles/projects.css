@@ -3,7 +3,7 @@
 }
 
 .project-card {
-  @apply select-none min-h-[210px] flex flex-col justify-between p-4 rounded-md border shadow-md hover:shadow-lg;
+  @apply bg-primary select-none min-h-[210px] flex flex-col justify-between p-4 rounded-md shadow-md hover:shadow-lg;
 }
 .project-card .head {
   @apply flex w-full;

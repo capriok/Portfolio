@@ -11,7 +11,7 @@
   @apply mx-2 mt-2 mb-6;
 }
 .about .time {
-  @apply text-neutral-800;
+  @apply text-foreground;
 }
 .about .company {
   @apply mb-2;

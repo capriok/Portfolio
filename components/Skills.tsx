@@ -33,7 +33,16 @@ export default function Skills() {
   const [tab, setTab] = useState<object>({ c: true })
 
   const handleSet = (t) => !Object.keys(tab).includes(t) && setTab({ [t]: true })
-  const tabCn = (t, x) => (tab[t] ? `btn tab active ${x}` : `btn tab ${x}`)
+
+  const Tab = ({ tab, loc, children }) => {
+    const baseCn = `btn gradient-hover tab ${loc}`
+    const tabCn = tab[tab] ? baseCn + "active" : baseCn
+    return (
+      <button className={tabCn} onClick={() => handleSet(tab)}>
+        {children}
+      </button>
+    )
+  }
 
   const Skill = ({ Icon, name }) => (
     <div className="skill">
@@ -51,26 +60,26 @@ export default function Skills() {
       <h1 className="section-title">Technology</h1>
       <div className="flipper">
         <div className="tabs">
-          <button className={tabCn("a", "l")} onClick={() => handleSet("a")}>
+          <Tab tab="a" loc="l">
             <div>Storage and</div>
             <div>Deployment</div>
-          </button>
-          <button className={tabCn("b", "c")} onClick={() => handleSet("b")}>
+          </Tab>
+          <Tab tab="b" loc="c">
             <div>Programming </div>
             <div>Languages</div>
-          </button>
-          <button className={tabCn("c", "c")} onClick={() => handleSet("c")}>
+          </Tab>
+          <Tab tab="c" loc="c">
             <div>Front-end </div>
             <div>Technologies</div>
-          </button>
-          <button className={tabCn("d", "c")} onClick={() => handleSet("d")}>
+          </Tab>
+          <Tab tab="d" loc="c">
             <div>Back-end </div>
             <div>Technologies</div>
-          </button>
-          <button className={tabCn("e", "r")} onClick={() => handleSet("e")}>
+          </Tab>
+          <Tab tab="e" loc="r">
             <div>Database </div>
             <div>Technologies</div>
-          </button>
+          </Tab>
         </div>
         <div className="content">
           <Icons t="a">

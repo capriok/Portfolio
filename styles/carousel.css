@@ -20,7 +20,7 @@
   @apply z-10 w-[100vw] h-screen fixed left-0 top-0 grid place-items-center;
 }
 .wide-view .content {
-  @apply w-[98%]  pl-0 grid place-items-center;
+  @apply w-[98%] md:w-[96%]  pl-0 grid place-items-center;
 }
 .wide-view .content img {
   @apply shadow-xl rounded-lg;
@@ -29,9 +29,9 @@
   @apply w-[60%] mt-6;
 }
 .wide-view .controls button {
-  @apply w-full;
+  @apply w-full bg-secondary;
 }
 
 .wide-view .underlay {
-  @apply z-[-10] w-[100vw] h-screen fixed left-0 top-0 bg-neutral-800/80;
+  @apply z-[-10] w-[100vw] h-screen fixed left-0 top-0 bg-neutral-900/90;
 }

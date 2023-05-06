@@ -6,36 +6,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-::-webkit-scrollbar {
-  position: relative;
-  right: 0px;
-  top: 100px;
-  height: 0;
-  width: 8px;
-}
-:root {
+
+/* :root {
   --background: hsl(0, 0%, 100%);
-  --primary: hsl(0, 0%, 95%);
-  --secondary: hsl(0, 0%, 85%);
-  --border: hsl(0, 0%, 85%);
+  --primary: hsl(0, 0%, 96%);
+  --secondary: hsl(0, 0%, 94%);
+  --foreground: hsl(0, 0%, 0%);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: hsl(0, 0%, 5%);
+    --primary: hsl(0, 0%, 8%);
+    --secondary: hsl(0, 0%, 10%);
+    --foreground: hsl(0, 0%, 100%);
+  }
+} */
+
+html {
+  --background: hsl(0, 0%, 100%);
+  --primary: hsl(0, 0%, 96%);
+  --secondary: hsl(0, 0%, 94%);
   --foreground: hsl(0, 0%, 0%);
 }
 
-@media (theme: dark) {
-  :root {
-    --background: hsl(0, 0%, 8%);
-    --primary: hsl(0, 0%, 6%);
-    --secondary: hsl(0, 0%, 20%);
-    --border: hsl(0, 0%, 20%);
-    --foreground: hsl(0, 0%, 100%);
-  }
+html[data-theme="dark"] {
+  --background: hsl(0, 0%, 5%);
+  --primary: hsl(0, 0%, 8%);
+  --secondary: hsl(0, 0%, 10%);
+  --foreground: hsl(0, 0%, 100%);
 }
 
+::-webkit-scrollbar {
+  @apply relative top-0 right-0 h-[0] w-[8px];
+}
 ::-webkit-scrollbar-track {
   @apply bg-primary;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-neutral-800;
+  @apply bg-neutral-600/80 rounded-md;
 }
 
 @layer base {
