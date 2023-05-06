@@ -3,7 +3,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si"
 
 export default function Contact() {
   return (
-    <div className="section contact">
+    <section className="contact">
       <div className="content">
         <h1 className="title">Feel free to reach out.</h1>
         <div className="sub-title">Direct Email</div>
@@ -38,6 +38,6 @@ export default function Contact() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

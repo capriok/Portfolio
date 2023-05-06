@@ -11,12 +11,13 @@
 }
 .project-card .head-title {
   @apply flex-1 text-lg mb-0;
+  @apply hover:ml-1 transition-all duration-200;
 }
 .project-card .head-icon {
   @apply text-2xl ml-2;
 }
 .project-card .foot-icon {
-  @apply text-xl ml-2 hover:text-[#4682B4];
+  @apply text-2xl ml-4 hover:text-[#4682B4];
   @apply transition-all duration-300 ease-in-out;
 }
 .project-card .foot {

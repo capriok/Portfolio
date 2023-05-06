@@ -13,7 +13,7 @@ export default function ProjectList({ projects, paginated }: Props) {
   const [pg, setPg] = useState<number>(6)
 
   return (
-    <div className="section project-list">
+    <section className="project-list">
       <h1 className="section-title">Project Collection</h1>
       <div className="project-cards">
         {projects.slice(0, paginated ? pg : projects.length).map((project, i) => (
@@ -34,6 +34,6 @@ export default function ProjectList({ projects, paginated }: Props) {
           )}
         </div>
       )}
-    </div>
+    </section>
   )
 }

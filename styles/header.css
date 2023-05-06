@@ -10,6 +10,14 @@
 .header .nav-item {
   @apply flex items-center ml-6;
 }
+.header .navigation .btn {
+  @apply transition-all duration-200 ease-in-out;
+  @apply flex items-center py-2 ml-2 w-[100px] shadow-none hover:border-b-transparent;
+  @apply hover:shadow-md;
+}
+.header .navigation .active {
+  @apply shadow-lg;
+}
 .header .title {
   @apply cursor-pointer m-0 text-3xl font-bold;
 }

@@ -6,18 +6,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 20, 20, 20;
-  }
+::-webkit-scrollbar {
+  position: relative;
+  right: 0px;
+  top: 100px;
+  height: 0;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-neutral-800/20;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-800/50 rounded-md;
 }
 body {
   padding: 0;
   margin: 0;
-  color: rgb(var(--foreground-rgb));
   font-size: 14.5px;
-  background-color: var(255);
+  background-color: white;
 }
 * {
   box-sizing: border-box;
