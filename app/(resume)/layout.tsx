@@ -2,7 +2,7 @@ import React from "react"
 import Header from "@components/Header"
 import "@styles/globals.css"
 
-import Resume from "/images/resume.jpg"
+import Resume from "/images/RESUME.jpg"
 
 export const metadata = {
   title: "Kyle Caprio | Resume",
