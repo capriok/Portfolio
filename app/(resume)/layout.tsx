@@ -8,12 +8,12 @@ export const metadata = {
   title: "Kyle Caprio | Resume",
   description: "Software Engineer Resume",
   openGraph: {
-    images: [Resume],
+    images: [Resume.src],
   },
 }
 
 export default function ResumeLayout({ children }: { children: React.ReactNode }) {
-  console.log(Resume)
+  console.log(Resume.src)
 
   return (
     <>
