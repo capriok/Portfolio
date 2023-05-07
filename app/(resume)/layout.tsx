@@ -5,7 +5,7 @@ import "@styles/globals.css"
 const PrimaryPDF = process.env.NEXT_PUBLIC_RESUME_S3
 
 export const metadata = {
-  title: "Kyle Caprio | Recume",
+  title: "Kyle Caprio | Resume",
   description: "Software Engineer Resume",
   openGraph: {
     images: [PrimaryPDF],

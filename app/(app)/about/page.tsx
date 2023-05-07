@@ -3,7 +3,7 @@ import experience from "@json/experience.json"
 
 export const metadata = {
   title: "Kyle Caprio | About",
-  description: "My name is Kyle. Im a self taught software engineer based in Arizona.",
+  description: "My name is Kyle. A self taught software engineer based in Arizona.",
 }
 
 export default function About() {
