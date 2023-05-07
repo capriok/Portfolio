@@ -6,7 +6,8 @@ import Resume from "@images/RESUME.jpg"
 
 export const metadata = {
   title: "Kyle Caprio | Resume",
-  description: "Software Engineer Resume",
+  description:
+    "Seasoned software engineer with front and backend experience in strategizing and maintaining cross-platform software solutions to enhance efficiency and productivity across the web",
   openGraph: {
     images: [Resume.src],
   },
