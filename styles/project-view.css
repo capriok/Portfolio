@@ -8,7 +8,7 @@
   @apply text-2xl pt-4 pb-2;
 }
 .project-view .content {
-  @apply pl-4 md:pl-8 pb-2;
+  @apply md:pl-4 md:pl-8 pb-2;
 }
 .project-view .content {
   @apply overflow-hidden;

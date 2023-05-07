@@ -30,13 +30,13 @@ import { VscDatabase } from "react-icons/vsc"
 import { FaJava } from "react-icons/fa"
 
 export default function Skills() {
-  const [tab, setTab] = useState<object>({ c: true })
+  const [active, setActive] = useState<object>({ c: true })
 
-  const handleSet = (t) => !Object.keys(tab).includes(t) && setTab({ [t]: true })
+  const handleSet = (t) => !Object.keys(active).includes(t) && setActive({ [t]: true })
 
   const Tab = ({ tab, loc, children }) => {
-    const baseCn = `btn gradient-hover tab ${loc}`
-    const tabCn = tab[tab] ? baseCn + "active" : baseCn
+    const baseCn = `btn gradient-hover tab ${loc} `
+    const tabCn = active[tab] ? baseCn + "active" : baseCn
     return (
       <button className={tabCn} onClick={() => handleSet(tab)}>
         {children}
@@ -53,7 +53,7 @@ export default function Skills() {
     </div>
   )
 
-  const Icons = ({ children, t }) => tab[t] && children
+  const Icons = ({ children, t }) => active[t] && children
 
   return (
     <section className="skills">
