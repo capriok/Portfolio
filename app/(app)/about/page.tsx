@@ -1,8 +1,10 @@
-import React from "react"
-
 import Contact from "@components/Contact"
-
 import experience from "@json/experience.json"
+
+export const metadata = {
+  title: "Kyle Caprio | About",
+  description: "My name is Kyle. Im a self taught software engineer based in Arizona.",
+}
 
 export default function About() {
   return (

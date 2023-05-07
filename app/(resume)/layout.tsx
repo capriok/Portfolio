@@ -1,17 +1,16 @@
-import "@styles/globals.css"
-import { Inter } from "next/font/google"
-const inter = Inter({ subsets: ["latin"] })
-
-export const metadata = {
-  title: "Kyle Caprio | Portfolio",
-  description: "Software Engineer",
-  author: "Kyle Caprio",
-  keywords:
-    "JavaScript, TypeScript, React, Nextjs, Frontend Engineer, Frontend Developer, Fullstack Engineer, Fullstack Developer",
-}
-
 import React from "react"
 import Header from "@components/Header"
+import "@styles/globals.css"
+
+const PrimaryPDF = process.env.NEXT_PUBLIC_RESUME_S3
+
+export const metadata = {
+  title: "Kyle Caprio | Recume",
+  description: "Software Engineer Resume",
+  openGraph: {
+    images: [PrimaryPDF],
+  },
+}
 
 export default function ResumeLayout({ children }: { children: React.ReactNode }) {
   return (

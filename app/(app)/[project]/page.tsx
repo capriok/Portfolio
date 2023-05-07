@@ -1,14 +1,6 @@
-import ProjectView from "@components/ProjectView"
 import { getProjects } from "@api/getProjects"
+import ProjectView from "@components/ProjectView"
 import projects from "@json/projects.json"
-
-export const metadata = {
-  title: "Kyle Caprio | Portfolio",
-  description: "Software Engineer",
-  author: "Kyle Caprio",
-  keywords:
-    "JavaScript, TypeScript, React, Nextjs, Frontend Engineer, Frontend Developer, Fullstack Engineer, Fullstack Developer",
-}
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
