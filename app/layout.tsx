@@ -1,3 +1,6 @@
+import { Inter } from "next/font/google"
+const inter = Inter({ subsets: ["latin"] })
+
 export const metadata = {
   title: "Kyle Caprio | Portfolio",
   description: "Software Engineer",
@@ -5,20 +8,14 @@ export const metadata = {
   keywords:
     "JavaScript, TypeScript, React, Nextjs, Frontend Engineer, Frontend Developer, Fullstack Engineer, Fullstack Developer",
 }
-
+import React from "react"
 import Header from "@components/Header"
 import "@styles/globals.css"
 
-export default function AppLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <Header />
-      <div className="layout">
-        {children}
-        <footer className="footer">
-          <p>Built by Kyle Caprio | {new Date().getFullYear()}</p>
-        </footer>
-      </div>
-    </>
+    <html>
+      <body className={inter.className}>{children}</body>
+    </html>
   )
 }
