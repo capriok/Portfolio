@@ -2,7 +2,7 @@ import React from "react"
 import Header from "@components/Header"
 import "@styles/globals.css"
 
-import Resume from "/images/RESUME.jpg"
+import Resume from "@images/RESUME.jpg"
 
 export const metadata = {
   title: "Kyle Caprio | Resume",
@@ -13,6 +13,8 @@ export const metadata = {
 }
 
 export default function ResumeLayout({ children }: { children: React.ReactNode }) {
+  console.log(Resume)
+
   return (
     <>
       <Header />
