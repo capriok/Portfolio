@@ -4,13 +4,19 @@ import FeaturedCard from "@components/FeatureCard"
 
 export default function FeatureList({ features }) {
   return (
-    <section className="feature-list">
-      <h1 className="section-title">Featured</h1>
-      <div className="features-cards">
+    <section className={s.features}>
+      <h1 className={s.sectionTitle}>Featured</h1>
+      <div className={s.cards}>
         {features.map((project, i: number) => (
           <FeaturedCard key={i} project={project} index={i} />
         ))}
       </div>
     </section>
   )
+}
+
+const s = {
+  features: " w-full",
+  sectionTitle: "section-title",
+  cards: "flex flex-col",
 }

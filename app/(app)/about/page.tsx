@@ -8,11 +8,11 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="about">
-      <h1 className="section-title">About me</h1>
-      <div className="content">
-        <h1 className="title">Background</h1>
-        <p className="indent">
+    <>
+      <h1 className={s.sectionTitle}>About me</h1>
+      <div className={s.content}>
+        <h1 className={s.title}>Background</h1>
+        <p className={s.indent}>
           My name is Kyle. Im a self taught software engineer based in Arizona. I found my
           passion for learning computer sciences at the age of 16 and have been
           programming ever since. Being able to effectively teach myself is something I am
@@ -25,17 +25,17 @@ export default function About() {
           programming technologies and how to better myself as a programmer but also find
           joy with meditation, music, hiking, and spending time under the sun.
         </p>
-        <h1 className="title">Experience</h1>
+        <h1 className={s.title}>Experience</h1>
         <ul>
           {experience.map((exp, i) => (
-            <div key={i} className="item">
-              <div className="time">{exp.timeFrame}</div>
-              <div className="company">
+            <div key={i} className={s.item}>
+              <div className={s.time}>{exp.timeFrame}</div>
+              <div className={s.company}>
                 <b>
                   {exp.occupation} - {exp.company}
                 </b>
               </div>
-              <ul className="bullets">
+              <ul className={s.bullets}>
                 {exp.bullets.map((bullet, i) => (
                   <li key={i}>{bullet}</li>
                 ))}
@@ -43,10 +43,10 @@ export default function About() {
             </div>
           ))}
         </ul>
-        <h1 className="title">Education</h1>
+        <h1 className={s.title}>Education</h1>
         <ul>
-          <div className="item">
-            <div className="time">Graduated Feb 2022</div>
+          <div className={s.item}>
+            <div className={s.time}>Graduated Feb 2022</div>
             <div>
               <b>Rasmussen University</b> - Deans List, 3.97 GPA
             </div>
@@ -55,6 +55,17 @@ export default function About() {
         </ul>
       </div>
       <Contact />
-    </div>
+    </>
   )
+}
+
+const s = {
+  sectionTitle: "section-title",
+  content: "w-full md:w-[80%] mx-auto my-0 mb-10",
+  indent: "indent-6",
+  title: "text-2xl my-4",
+  item: "md:mx-2 mt-2 mb-6",
+  time: "text-foreground",
+  company: "mb-2",
+  bullets: "ml-6",
 }

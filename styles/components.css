@@ -1,13 +1,8 @@
-@import "./error.css";
-@import "./resume.css";
-@import "./layout.css";
 @import "./header.css";
-@import "./about.css";
-@import "./introduction.css";
 @import "./skills.css";
-@import "./features.css";
-@import "./projects.css";
-@import "./contact.css";
+@import "./feature-card.css";
+@import "./project-card.css";
+@import "./project-view.css";
 @import "./carousel.css";
 
 @layer base {
@@ -39,6 +34,5 @@
   .gradient-hover {
     @apply transition-colors;
     @apply hover:bg-gradient-to-br hover:from-background hover:to-secondary;
-    /* @apply dark:hover:bg-gradient-to-br dark:hover:from-background dark:hover:to-secondary dark:hover:border-border; */
   }
 }

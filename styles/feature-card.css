@@ -1,10 +1,3 @@
-.feature-list {
-  @apply w-full;
-}
-
-.feature-cards {
-  @apply flex flex-col;
-}
 .feature-card {
   @apply select-none relative;
   @apply mb-[80px] md:mb-[120px];
@@ -12,6 +5,7 @@
 .feature-card * {
   @apply transition-all duration-300 ease-in-out;
 }
+
 .feature-card .feature {
   @apply flex min-h-[200px] relative overflow-hidden rounded-lg;
 }
@@ -55,9 +49,9 @@
 .feature-card span {
   @apply mx-2 my-0;
 }
-.feature-list .foot {
+.feature-card .foot {
   @apply flex justify-end;
 }
-.feature-list .foot .nav-icons {
+.feature-card .foot .nav-icons {
   @apply grid grid-cols-2 gap-4 text-2xl ml-4;
 }

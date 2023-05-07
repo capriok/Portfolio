@@ -1,4 +1,4 @@
-import Introduction from "@components/Intro"
+import Introduction from "@components/Introduction"
 import Skills from "@components/Skills"
 import FeatureList from "@components/FeatureList"
 import ProjectList from "@components/ProjectList"

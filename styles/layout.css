@@ -1,9 +1,0 @@
-.layout {
-  @apply w-full max-w-[1000px] transition-all delay-200 mx-auto my-0 px-4 md:px-6 md:p-0;
-}
-.layout .footer {
-  @apply h-[100px] flex justify-center items-center mt-auto;
-}
-.resume-layout {
-  @apply w-full h-[calc(100vh-75px)] transition-all delay-200 mx-auto my-0;
-}

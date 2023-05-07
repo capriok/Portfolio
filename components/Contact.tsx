@@ -3,28 +3,28 @@ import { SiGithub, SiLinkedin } from "react-icons/si"
 
 export default function Contact() {
   return (
-    <section className="contact">
-      <div className="content">
-        <h1 className="title">Feel free to reach out.</h1>
-        <div className="sub-title">Direct Email</div>
-        <div className="btns">
+    <section className={s.contact}>
+      <div className={s.content}>
+        <h1 className={s.title}>Feel free to reach out.</h1>
+        <div className={s.subTitle}>Direct Email</div>
+        <div className={s.buttons}>
           <a
             href="https://mail.google.com/mail/u/0/?fs=1&to=capriok7@gmail.com&su=Portfolio%20Inquiry&tf=cm"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="btn gradient-hover">
-              <HiOutlineMail className="icon" />
+            <button className={s.button}>
+              <HiOutlineMail className={s.icon} />
             </button>
           </a>
         </div>
       </div>
-      <div className="content">
-        <div className="sub-title">Other Platforms</div>
-        <div className="btns">
+      <div className={s.content}>
+        <div className={s.subTitle}>Other Platforms</div>
+        <div className={s.buttons}>
           <a href="https://github.com/capriok" target="_blank" rel="noreferrer">
-            <button className="btn gradient-hover">
-              <SiGithub className="icon" />
+            <button className={s.button}>
+              <SiGithub className={s.icon} />
             </button>
           </a>
           <a
@@ -32,12 +32,22 @@ export default function Contact() {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="btn gradient-hover">
-              <SiLinkedin className="icon" />
+            <button className={s.button}>
+              <SiLinkedin className={s.icon} />
             </button>
           </a>
         </div>
       </div>
     </section>
   )
+}
+
+const s = {
+  contact: "flex flex-col justify-center items-center",
+  content: "m-0 select-none flex flex-col justify-center items-center",
+  title: "text-2xl font-bold",
+  subTitle: "text-lg font-semibold mt-4",
+  buttons: "btns",
+  button: "btn gradient-hover",
+  icon: "icon",
 }
