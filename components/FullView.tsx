@@ -59,7 +59,7 @@ export default function FullView({ images, view, set }: Props) {
           loading="eager"
           priority={true}
         />
-        <div className="w-[60%] mt-6 btns">
+        <div className="w-[60%] flex gap-2 m-2 mt-6 ">
           <div
             className="btn btn-icon gradient-hover w-full bg-secondary"
             onClick={() => prevImage()}

@@ -41,7 +41,7 @@ export default function Skills() {
       r: "rounded-tl-none rounded-bl-none",
       active: "bg-secondary shadow-lg",
     }
-    const baseCn = `btn gradient-hover bg-primary w-full flex flex-col justify-center items-center px-3 md:px-2 py-2 text-xs md:text-sm cursor-pointer font-normal ${s[loc]}`
+    const baseCn = `btn gradient-hover bg-primary w-full flex flex-col justify-center items-center px-4 md:px-2 py-2 text-xs md:text-sm cursor-pointer font-normal ${s[loc]}`
 
     const tabCn = active[tab] ? `${baseCn} ${s.active}` : baseCn
     return (

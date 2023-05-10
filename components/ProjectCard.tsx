@@ -23,23 +23,11 @@ function ProjectCard({ project }: Props) {
         <div>{project.description}</div>
       </div>
       <div className="flex justify-end w-full pt-4">
-        <Link
-          passHref
-          target="_blank"
-          rel="noreferrer"
-          href={`${project.source}`}
-          className="text-2xl ml-4 hover:text-[#4682B4] transition-colors duration-200"
-        >
-          <AiFillGithub />
+        <Link passHref target="_blank" rel="noreferrer" href={`${project.source}`} className="ml-4">
+          <AiFillGithub className="btn-icon" />
         </Link>
-        <Link
-          passHref
-          target="_blank"
-          rel="noreferrer"
-          href={`${project.demo}`}
-          className="text-2xl ml-4 hover:text-[#4682B4] transition-colors duration-200"
-        >
-          <RiExternalLinkFill />
+        <Link passHref target="_blank" rel="noreferrer" href={`${project.demo}`} className="ml-4">
+          <RiExternalLinkFill className="btn-icon" />
         </Link>
       </div>
     </div>

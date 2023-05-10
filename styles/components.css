@@ -9,60 +9,17 @@
     @apply text-3xl font-bold mt-14 mb-8;
   }
 
-  .btns {
-    @apply flex gap-2 m-2;
-  }
   .btn {
     @apply text-sm font-bold cursor-pointer flex justify-center py-3 px-8;
-    @apply transition-colors rounded-lg shadow-sm bg-primary border-secondary;
-    @apply hover:text-[#4682B4];
+    @apply rounded-lg shadow-sm bg-primary border-secondary hover:text-[#4682B4];
+    @apply transition-all duration-200;
   }
-  .btn * {
-    @apply hover:text-[#4682B4];
+  .btn-icon {
+    @apply text-2xl font-bold hover:text-[#4682B4];
+    @apply transition-all duration-200;
   }
-  .btn .icon {
-    @apply text-lg font-bold hover:text-[#4682B4];
-  }
-  .hover {
-    @apply hover:text-[#4682B4];
-  }
-
   .gradient-hover {
-    @apply transition-colors;
     @apply hover:bg-gradient-to-br hover:from-background hover:to-secondary;
-  }
-
-  .feature-card * {
-    @apply transition-all;
-  }
-  .feature-card .feature {
-    @apply flex min-h-[200px] relative overflow-hidden rounded-lg;
-  }
-  .feature-card .overlay {
-    @apply bg-blue-400/10 hidden md:block z-10 absolute w-[450px] h-[245px] rounded-lg;
-  }
-  .feature-card .feature img {
-    @apply hidden md:block w-[450px] h-[245px] rounded-lg;
-  }
-  .feature-card .content {
-    @apply w-full h-full absolute flex justify-start flex-col;
-  }
-  .feature-card .ltr .feature {
-    @apply w-full justify-end;
-  }
-  .feature-card .ltr .overlay {
-    @apply top-0 right-0 items-end;
-  }
-  .feature-card .rtl .content {
-    @apply top-0 right-0 items-end;
-  }
-  .feature-card .ltr .content {
-    @apply top-0 left-0 items-start;
-  }
-  .feature-card .description {
-    @apply z-20 md:min-h-[60px] md:max-w-[60%] rounded-lg p-4 bg-neutral-900 text-white shadow-lg;
-  }
-  .feature-card .rtl .description {
-    @apply text-right;
+    @apply transition-all duration-200;
   }
 }
