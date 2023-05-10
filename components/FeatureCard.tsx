@@ -35,7 +35,7 @@ export default function FeaturedCard({ project, index }: Props) {
   const descriptionCn = (is) => {
     const base =
       "z-20 md:min-h-[60px] md:max-w-[60%] rounded-lg p-4 bg-neutral-900 text-white shadow-lg group-hover:md:mr-2"
-    const invert = "text-right group-hover:md:ml-2"
+    const invert = "text-left group-hover:md:ml-2"
     return !is ? base : `${base} ${invert}`
   }
 
@@ -54,7 +54,7 @@ export default function FeaturedCard({ project, index }: Props) {
         />
       </div>
       <div className={contentCn(isInverted)}>
-        <h1 className="mono text-[#4682B4]">Featured Project</h1>
+        <h1 className="mono text-[#4682B4] pb-2">Featured Project</h1>
         <Link passHref href={`/${project.slug}`}>
           <h1 className="text-2xl font-bold mb-3">{project.title}</h1>
         </Link>
