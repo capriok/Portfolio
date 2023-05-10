@@ -4,22 +4,16 @@ const PrimaryPDF = process.env.NEXT_PUBLIC_RESUME_S3
 export default function Resume() {
   return (
     <>
-      <div className={s.resume}>
+      <div className="h-full hidden md:block">
         <object data={PrimaryPDF} type="application/pdf" width="100%" height="100%">
           Resume
         </object>
       </div>
-      <div className={s.resumeMobile}>
+      <div className="md:hidden flex justify-center mt-10">
         <a href={PrimaryPDF!} target="_blank" rel="noreferrer">
-          <button className={s.button}>View Resume</button>
+          <button className="btn gradient-hover">View Resume</button>
         </a>
       </div>
     </>
   )
-}
-
-const s = {
-  resume: "h-full hidden md:block",
-  resumeMobile: "md:hidden flex justify-center mt-10",
-  button: "btn gradient-hover",
 }

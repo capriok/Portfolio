@@ -25,7 +25,7 @@ export default function Carousel({ images }: Props) {
   return (
     <>
       <FullView images={images} view={viewState} set={setView} />
-      <div className="carousel">
+      <div className=" w-full flex flex-col justify-center items-center">
         <AliceCarousel
           ref={(el) => (ref = el)}
           mouseTracking={isMobile ? true : false}
@@ -36,12 +36,12 @@ export default function Carousel({ images }: Props) {
           items={images.map((image, i) => (
             <div
               key={i}
-              className="content"
+              className="w-full m-auto p-0 pb-4 md:pb-8 px-2 transition-colors"
               onDragStart={handleOnDragStart}
               onClick={() => !isMobile && setView({ open: true, image: i })}
             >
               <Image
-                className="image"
+                className="cursor-pointer rounded-lg md:mx-auto md:shadow-sm md:hover:shadow-none max-w-[100%] max-h-[200px] md:max-w-[400px] md:max-h-[200px]"
                 src={image}
                 alt={image}
                 width={400}
@@ -53,11 +53,17 @@ export default function Carousel({ images }: Props) {
             </div>
           ))}
         />
-        <div className="controls">
-          <button className="btn gradient-hover" onClick={() => ref.slidePrev()}>
+        <div className="flex gap-2 my-4">
+          <button
+            className="btn gradient-hover bg-primary mb-4 py-2"
+            onClick={() => ref.slidePrev()}
+          >
             <MdChevronLeft className="icon" />
           </button>
-          <button className="btn gradient-hover" onClick={() => ref.slideNext()}>
+          <button
+            className="btn gradient-hover bg-primary mb-4 py-2"
+            onClick={() => ref.slideNext()}
+          >
             <MdChevronRight className="icon" />
           </button>
         </div>

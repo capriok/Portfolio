@@ -14,34 +14,26 @@ export default function ProjectList({ projects, paginated }: Props) {
 
   return (
     <>
-      <h1 className={s.sectionTitle}>Project Collection</h1>
-      <div className={s.cards}>
+      <h1 className="section-title">Project Collection</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-6">
         {projects.slice(0, paginated ? pg : projects.length).map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}
       </div>
       {paginated && (
-        <div className={s.controls}>
+        <div className="flex justify-center mt-6">
           {pg > 6 && (
-            <button className={s.button} onClick={() => setPg(pg - 3)}>
-              <MdExpandLess className={s.icon} />
-            </button>
+            <div className="btn gradient-hover ml-4 py-2" onClick={() => setPg(pg - 3)}>
+              <MdExpandLess className="icon" />
+            </div>
           )}
           {pg <= projects.length && (
-            <button className={s.button} onClick={() => setPg(pg + 3)}>
-              <MdExpandMore className={s.icon} />
-            </button>
+            <div className="btn gradient-hover ml-4 py-2" onClick={() => setPg(pg + 3)}>
+              <MdExpandMore className="icon" />
+            </div>
           )}
         </div>
       )}
     </>
   )
-}
-
-const s = {
-  sectionTitle: "section-title",
-  cards: "grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-6",
-  controls: "flex justify-center mt-6",
-  button: "btn gradient-hover ml-4 py-2",
-  icon: "icon",
 }

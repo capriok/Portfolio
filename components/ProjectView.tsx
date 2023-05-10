@@ -12,44 +12,52 @@ interface Props {
 
 function ProjectView({ project }: Props) {
   return (
-    <div className="project-view">
+    <>
       <h1 className="section-title">{project.title}</h1>
       <Carousel images={project.images} />
-      <p className="description">{project.description}</p>
+      <p className="mb-4 pb-2 border-b">{project.description}</p>
       {project.writing.process && (
         <>
-          <h1 className="sub-title">The Process</h1>
-          <div className="content">
-            <p className="process">{project.writing.process}</p>
-            <p className="process">{project.writing.processSub}</p>
+          <h1 className="text-2xl pt-6 pb-2">The Process</h1>
+          <div className="pl-4 md:pl-8 pb-2 overflow-hidden">
+            <p className="indent-4 pb-2">{project.writing.process}</p>
+            <p className="indent-4 pb-2">{project.writing.processSub}</p>
           </div>
         </>
       )}
       {project.writing.conclusion.length > 0 && (
         <>
-          <h1 className="sub-title">Reflection</h1>
-          <div className="content">
+          <h1 className="text-2xl pt-6 pb-2">Reflection</h1>
+          <div className="pl-4 md:pl-8 pb-2 overflow-hidden">
             {project.writing.conclusion.map((conclusion, i) => (
               <li key={i}>{conclusion}</li>
             ))}
           </div>
         </>
       )}
-      <h1 className="sub-title">Technology Stack</h1>
-      <div className="content tags">
+      <h1 className="text-2xl pt-6 pb-2">Technology Stack</h1>
+      <div className="pl-4 md:pl-8 pb-2 overflow-hidden w-full flex gap-2">
         {project.stack.map((stack, i) => (
-          <span key={i} className="btn">
+          <span
+            key={i}
+            className="btn bg-primary shadow-sm text-foreground hover:text-foreground cursor-default font-normal py-1 px-3 hover:bg-none"
+          >
             {stack}
           </span>
         ))}
       </div>
       {project.resources.length > 0 && (
         <>
-          <h1 className="sub-title">Resources</h1>
-          <div className="content">
+          <h1 className="text-2xl pt-6 pb-2">Resources</h1>
+          <div className="pl-4 md:pl-8 pb-2 overflow-hidden">
             {project.resources.map((resource, i) => (
               <li key={i}>
-                <a href={resource} target="_blank" rel="noreferrer" className="resource">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={resource}
+                  className="underline text-blue-600"
+                >
                   {resource}
                 </a>
               </li>
@@ -57,34 +65,28 @@ function ProjectView({ project }: Props) {
           </div>
         </>
       )}
-      <h1 className="sub-title">Explore</h1>
-      <div className="links">
+      <h1 className="text-2xl pt-6 pb-2">Explore</h1>
+      <div className="w-full grid grid-cols-3 gap-2 links">
         <Link passHref href="/">
-          <button className="btn">
-            <div className="link">
-              <AiOutlineHome className="icon" />
-              Home
-            </div>
-          </button>
+          <div className="btn w-full flex flex-col justify-center items-center">
+            <AiOutlineHome className="icon" />
+            Home
+          </div>
         </Link>
         <Link passHref target="_blank" rel="noreferrer" href={project.source}>
-          <button className="btn">
-            <div className="link">
-              <AiFillGithub className="icon" />
-              Github
-            </div>
-          </button>
+          <div className="btn w-full flex flex-col justify-center items-center">
+            <AiFillGithub className="icon" />
+            Github
+          </div>
         </Link>
         <Link passHref target="_blank" rel="noreferrer" href={project.demo}>
-          <button className="btn">
-            <div className="link">
-              <RiExternalLinkFill className="icon" />
-              Demo
-            </div>
-          </button>
+          <div className="btn w-full flex flex-col justify-center items-center">
+            <RiExternalLinkFill className="icon" />
+            Demo
+          </div>
         </Link>
       </div>
-    </div>
+    </>
   )
 }
 

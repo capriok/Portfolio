@@ -9,24 +9,26 @@ interface Props {
 
 function ProjectCard({ project }: Props) {
   return (
-    <div className="project-card gradient-hover">
-      <div className="head">
-        <h1 className="head-title">
-          <Link passHref href={`/${project.slug}`}>
-            {project.title}
-          </Link>
-        </h1>
+    <div className="bg-primary select-none min-h-[210px] flex flex-col justify-between p-4 rounded-md shadow-md hover:shadow-lg gradient-hover">
+      <div className="flex w-full">
+        <Link
+          passHref
+          href={`/${project.slug}`}
+          className="w-full text-lg mb-2 hover:ml-1 transition-all duration-200"
+        >
+          {<div className="font-bold">{project.title}</div>}
+        </Link>
       </div>
-      <div className="description">
+      <div className="h-full">
         <div>{project.description}</div>
       </div>
-      <div className="foot">
+      <div className="flex justify-end w-full pt-4">
         <Link
           passHref
           target="_blank"
           rel="noreferrer"
           href={`${project.source}`}
-          className="foot-icon"
+          className="text-2xl ml-4 hover:text-[#4682B4] transition-colors duration-200"
         >
           <AiFillGithub />
         </Link>
@@ -35,7 +37,7 @@ function ProjectCard({ project }: Props) {
           target="_blank"
           rel="noreferrer"
           href={`${project.demo}`}
-          className="foot-icon"
+          className="text-2xl ml-4 hover:text-[#4682B4] transition-colors duration-200"
         >
           <RiExternalLinkFill />
         </Link>

@@ -35,8 +35,15 @@ export default function Skills() {
   const handleSet = (t) => !Object.keys(active).includes(t) && setActive({ [t]: true })
 
   const Tab = ({ tab, loc, children }) => {
-    const baseCn = `btn gradient-hover tab ${loc} `
-    const tabCn = active[tab] ? baseCn + "active" : baseCn
+    const s = {
+      l: "rounded-tr-none rounded-br-none",
+      c: "rounded-none",
+      r: "rounded-tl-none rounded-bl-none",
+      active: "bg-secondary shadow-lg",
+    }
+    const baseCn = `btn gradient-hover bg-primary w-full flex flex-col justify-center items-center px-3 md:px-2 py-2 text-xs md:text-sm cursor-pointer font-normal ${s[loc]}`
+
+    const tabCn = active[tab] ? `${baseCn} ${s.active}` : baseCn
     return (
       <button className={tabCn} onClick={() => handleSet(tab)}>
         {children}
@@ -45,43 +52,43 @@ export default function Skills() {
   }
 
   const Skill = ({ Icon, name }) => (
-    <div className="skill">
-      <div className="icon">
+    <div className="w-[50%] flex flex-col justify-center items-center pt-8 pb-2">
+      <div className="text-2xl md:text-3xl">
         <Icon />
       </div>
-      <div className="name">{name}</div>
+      <div className="text-sm md:text-base mt-2 md:mt-4">{name}</div>
     </div>
   )
 
   const Icons = ({ children, t }) => active[t] && children
 
   return (
-    <section className="skills">
+    <section className="w-full transition-all duration-200">
       <h1 className="section-title">Technology</h1>
-      <div className="flipper">
-        <div className="tabs">
+      <div className="mx-[-10px] md:mx-auto md:w-[80%] flex flex-col md:flex-col">
+        <div className="tabs w-full flex md:justify-center overflow-x-scroll md:overflow-visible">
           <Tab tab="a" loc="l">
             <div>Storage and</div>
             <div>Deployment</div>
           </Tab>
           <Tab tab="b" loc="c">
-            <div>Programming </div>
+            <div>Programming</div>
             <div>Languages</div>
           </Tab>
           <Tab tab="c" loc="c">
-            <div>Front-end </div>
+            <div>Frontend</div>
             <div>Technologies</div>
           </Tab>
           <Tab tab="d" loc="c">
-            <div>Back-end </div>
+            <div>Backend</div>
             <div>Technologies</div>
           </Tab>
           <Tab tab="e" loc="r">
-            <div>Database </div>
+            <div>Database</div>
             <div>Technologies</div>
           </Tab>
         </div>
-        <div className="content">
+        <div className="w-[80%] mx-auto flex flex-wrap md:flex-nowrap justify-center items-center">
           <Icons t="a">
             <Skill Icon={SiAmazonaws} name="AWS" />
             <Skill Icon={SiMicrosoftazure} name="Azure" />

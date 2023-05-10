@@ -25,9 +25,9 @@ function ProjectTemplate({ params }: { params: { project: string } }) {
   const project = projects.find((p) => p.slug === params.project)!
 
   return (
-    <div className="page">
+    <>
       <ProjectView project={project} />
-    </div>
+    </>
   )
 }
 

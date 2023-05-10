@@ -47,10 +47,10 @@ export default function FullView({ images, view, set }: Props) {
   if (!view.open) return <></>
 
   return (
-    <div className="wide-view">
-      <div className="content">
+    <div className="z-10 w-[100vw] h-screen fixed left-0 top-0 grid place-items-center">
+      <div className="w-[98%] md:w-[96%] pl-0 grid place-items-center">
         <Image
-          className="image"
+          className="shadow-xl rounded-lg select-none"
           src={images[view.image]}
           alt={images[view.image]}
           width={1920}
@@ -59,16 +59,25 @@ export default function FullView({ images, view, set }: Props) {
           loading="eager"
           priority={true}
         />
-        <div className="controls btns">
-          <button className="btn btn-icon gradient-hover" onClick={() => prevImage()}>
+        <div className="w-[60%] mt-6 btns">
+          <div
+            className="btn btn-icon gradient-hover w-full bg-secondary"
+            onClick={() => prevImage()}
+          >
             <MdChevronLeft />
-          </button>
-          <button className="btn btn-icon gradient-hover" onClick={() => nextImage()}>
+          </div>
+          <div
+            className="btn btn-icon gradient-hover w-full bg-secondary"
+            onClick={() => nextImage()}
+          >
             <MdChevronRight />
-          </button>
+          </div>
         </div>
       </div>
-      <div className="underlay" onClick={() => close()} />
+      <div
+        className="z-[-10] w-[100vw] h-screen fixed left-0 top-0 bg-neutral-900/90"
+        onClick={() => close()}
+      />
     </div>
   )
 }
