@@ -34,33 +34,3 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-neutral-600/80 rounded-md;
 }
-
-@layer base {
-  body {
-    color: var(--foreground);
-    background: var(--background);
-    @apply p-0 m-0 text-[14.5px];
-  }
-}
-
-html {
-  @apply w-full scroll-smooth;
-}
-ul > li {
-  @apply list-disc;
-}
-* {
-  box-sizing: border-box;
-  font-family: "Nunito", sans-serif !important;
-}
-h1 {
-  margin: 0;
-  font-family: "Roboto", sans-serif !important;
-  letter-spacing: 0.5px;
-  font-weight: 700;
-}
-.mono {
-  font-family: "Roboto Mono", monospace !important;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-}
