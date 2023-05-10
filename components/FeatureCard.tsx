@@ -35,8 +35,9 @@ export default function FeaturedCard({ project, index }: Props) {
   const descriptionCn = (is) => {
     const base =
       "z-20 md:min-h-[60px] md:max-w-[60%] rounded-lg p-4 bg-neutral-900 text-white shadow-lg group-hover:md:mr-2"
+    const normal = "text-right"
     const invert = "text-left group-hover:md:ml-2"
-    return !is ? base : `${base} ${invert}`
+    return !is ? `${base} ${normal}` : `${base} ${invert}`
   }
 
   return (
@@ -61,21 +62,21 @@ export default function FeaturedCard({ project, index }: Props) {
         <p className={descriptionCn(isInverted)}>{project.description}</p>
         <div className="flex my-4">
           {project.tags.map((tag, i) => (
-            <span key={i} className="mono mx-2 my-0">
+            <span key={i} className="mono mx-3 my-0">
               {tag}
             </span>
           ))}
         </div>
-        {/* <div className="flex justify-end">
-            <div className="grid grid-cols-2 gap-4 text-2xl ml-4">
-              <Link passHref target="_blank" rel="noreferrer" href={`${project.source}`}>
-                <AiFillGithub className="btn-icon" />
-              </Link>
-              <Link passHref target="_blank" rel="noreferrer" href={`${project.demo}`}>
-                <RiExternalLinkFill className="btn-icon" />
-              </Link>
-            </div>
-          </div> */}
+        <div className="flex justify-end">
+          <div className="grid grid-cols-2 gap-4 text-2xl ml-4">
+            <Link passHref target="_blank" rel="noreferrer" href={`${project.source}`}>
+              <AiFillGithub className="btn-icon" />
+            </Link>
+            <Link passHref target="_blank" rel="noreferrer" href={`${project.demo}`}>
+              <RiExternalLinkFill className="btn-icon" />
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )
