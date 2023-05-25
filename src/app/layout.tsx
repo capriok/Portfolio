@@ -1,5 +1,5 @@
 import React from "react"
-import "~/styles/globals.css"
+import "./globals.css"
 
 export const metadata = {
   title: "Kyle Caprio | Portfolio",
