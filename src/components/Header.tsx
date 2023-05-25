@@ -38,7 +38,7 @@ export default function Header() {
             passHref
             target="_blank"
             rel="noreferrer"
-            href="https://mail.google.com/mail/u/0/?fs=1&to=capriokdev@gmail.com&su=Portfolio%20Inquiry&tf=cm"
+            href="https://mail.google.com/mail/u/0/?fs=1&to=capriodev@gmail.com&su=Portfolio%20Inquiry&tf=cm"
             className={`${s.navItem} hover:shadow-none hover:bg-none`}
           >
             <div>Contact</div>
