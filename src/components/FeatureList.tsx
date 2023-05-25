@@ -1,6 +1,6 @@
 "use client"
 
-import FeaturedCard from "@components/FeatureCard"
+import FeaturedCard from "~/components/FeatureCard"
 
 export default function FeatureList({ features }) {
   return (

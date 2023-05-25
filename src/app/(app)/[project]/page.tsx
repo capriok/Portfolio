@@ -1,6 +1,6 @@
-import { getProjects } from "@api/getProjects"
-import ProjectView from "@components/ProjectView"
-import projects from "@json/projects.json"
+import { getProjects } from "~/api/getProjects"
+import ProjectView from "~/components/ProjectView"
+import projects from "@/json/projects.json"
 
 export async function generateStaticParams() {
   return projects.map((project) => ({

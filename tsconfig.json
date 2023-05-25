@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "target": "es5",
     "jsx": "preserve",
     "module": "esnext",
@@ -17,11 +18,8 @@
     "forceConsistentCasingInFileNames": true,
     "plugins": [{ "name": "next" }],
     "paths": {
-      "@components/*": ["./components/*"],
-      "@styles/*": ["./styles/*"],
-      "@json/*": ["./public/json/*"],
-      "@images/*": ["./public/images/*"],
-      "@api/*": ["./app/api/*"]
+      "~/*": ["./*"],
+      "@/*": ["../public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

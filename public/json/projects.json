@@ -2,21 +2,28 @@
   {
     "title": "Pepiti Stats",
     "slug": "pepiti",
-    "description": "Pepiti Stats - Co-creator of a community driven post-race analysis and leaderboards application for race leagues and series",
+    "description": "Pepiti Stats - Access race stats, host and join leagues, connect with friends, and compete with rivals through global leaderboards",
     "writing": {
-      "process": "",
-      "processSub": "",
-      "conclusion": []
+      "process": "We are a community of racing and statistic enthusiasts",
+      "processSub": "Access race stats in real-time, host and join leagues, connect with fellow races through social integrations, and compete with rivals through global leaderboards",
+      "conclusion": [
+        "Built with bleeding edge Nextjs App Router technologies",
+        "Improved skills working with Tailwindcss and Shadcn/ui"
+      ]
     },
     "stack": ["TypeScript", "Python", "Nextjs", "Tailwindcss", "AWS"],
-    "tags": ["TypeScript", "Nextjs", "Tailwindcss", "2023"],
-    "source": "https://github.com/paulrichan/pepiti-dashboard",
+    "tags": ["Nextjs", "Tailwindcss", "Shadcn/ui", "2023"],
+    "source": "https://github.com/capriok/pepiti-stats",
     "demo": "https://pepiti.com/",
     "thumb": "/images/PEPITI-SHOWCASE.jpg",
     "images": [
       "/images/PEPITI-SHOWCASE.jpg",
-      "/images/PEPITI-DASHBOARD.jpg",
-      "/images/PEPITI-RACES.jpg"
+      "/images/PEPITI-PROFILE.jpg",
+      "/images/PEPITI-RACES.jpg",
+      "/images/PEPITI-LEAGUES.jpg",
+      "/images/PEPITI-LEAGUE.jpg",
+      "/images/PEPITI-LEAGUERACE.jpg",
+      "/images/PEPITI-BLACKLISTS.jpg"
     ],
     "resources": ["https://pepiti.com", "https://nextjs.org", "https://tailwindcss.com"]
   },
@@ -73,10 +80,7 @@
       "/images/SWEETIE-GL.jpg",
       "/images/SWEETIE-CS.jpg"
     ],
-    "resources": [
-      "https://www.typescriptlang.org/docs/home.html",
-      "https://devcenter.heroku.com"
-    ]
+    "resources": ["https://www.typescriptlang.org/docs/home.html", "https://devcenter.heroku.com"]
   },
   {
     "title": "AutoSearch",
@@ -130,10 +134,7 @@
       "/images/WORKPOINTS-MARKETPLACE.jpg",
       "/images/WORKPOINTS-VISUAL.gif"
     ],
-    "resources": [
-      "https://code.visualstudio.com/api",
-      "https://marketplace.visualstudio.com"
-    ]
+    "resources": ["https://code.visualstudio.com/api", "https://marketplace.visualstudio.com"]
   },
   {
     "title": "Chatter",
@@ -250,10 +251,7 @@
       "/images/APEXFT-LAPTOP.jpg",
       "/images/APEXFT-TABLET.jpg"
     ],
-    "resources": [
-      "https://www.typescriptlang.org/docs/home.html",
-      "https://nextjs.org/docs"
-    ]
+    "resources": ["https://www.typescriptlang.org/docs/home.html", "https://nextjs.org/docs"]
   },
   {
     "title": "Godspeed",
@@ -302,9 +300,7 @@
     "demo": "https://kylecaprio.dev/env-locker",
     "thumb": "/images/NOT-FOUND.jpg",
     "images": ["/images/NOT-FOUND.jpg"],
-    "resources": [
-      "https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"
-    ]
+    "resources": ["https://docs.microsoft.com/en-us/dotnet/desktop/winforms/?view=netdesktop-5.0"]
   },
   {
     "title": "Cash Flow",
@@ -477,14 +473,7 @@
         "Management of complex core application and component structure"
       ]
     },
-    "stack": [
-      "React",
-      "JavaScript",
-      "CSS",
-      "Electron",
-      "Express.js",
-      "Youtube Data API v3"
-    ],
+    "stack": ["React", "JavaScript", "CSS", "Electron", "Express.js", "Youtube Data API v3"],
     "tags": ["JavaScript", "React", "Electron", "CSS", "2019"],
     "source": "https://github.com/capriok/MyTube",
     "demo": "https://mytube-music.kylecaprio.dev",

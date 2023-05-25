@@ -1,5 +1,5 @@
-import Contact from "@components/Contact"
-import experience from "@json/experience.json"
+import Contact from "~/components/Contact"
+import experience from "@/json/experience.json"
 
 export const metadata = {
   title: "Kyle Caprio | About",

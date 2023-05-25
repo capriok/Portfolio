@@ -1,6 +1,6 @@
-import { getProjects } from "@api/getProjects"
-import ProjectList from "@components/ProjectList"
-import Contact from "@components/Contact"
+import { getProjects } from "~/api/getProjects"
+import ProjectList from "~/components/ProjectList"
+import Contact from "~/components/Contact"
 
 export const metadata = {
   title: "Kyle Caprio | Work",

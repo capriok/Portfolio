@@ -11,9 +11,9 @@
   {
     "title": "Pepiti Stats",
     "slug": "pepiti",
-    "description": "Pepiti Stats - Co-creator of a community driven post-race analysis and leaderboards application for race leagues and series",
-    "tags": ["TypeScript", "Nextjs", "Tailwindcss", "2023"],
-    "source": "https://github.com/paulrichan/pepiti-dashboard",
+    "description": "Pepiti Stats - Access race stats, host and join leagues, connect with friends, and compete with rivals through global leaderboards",
+    "tags": ["Nextjs", "Tailwindcss", "Shadcn/ui", "2023"],
+    "source": "https://github.com/capriok/pepiti-stats",
     "demo": "https://pepiti.com/",
     "thumb": "/images/PEPITI-SHOWCASE.jpg"
   },

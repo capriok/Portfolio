@@ -1,5 +1,4 @@
-import Header from "@components/Header"
-import "@styles/globals.css"
+import Header from "~/components/Header"
 
 export const metadata = {
   title: "Kyle Caprio | Portfolio",

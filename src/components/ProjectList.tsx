@@ -1,8 +1,9 @@
 "use client"
+
 import React, { useState } from "react"
 
 import { MdExpandMore, MdExpandLess } from "react-icons/md"
-import ProjectCard from "@components/ProjectCard"
+import ProjectCard from "~/components/ProjectCard"
 
 interface Props {
   projects: any[]
