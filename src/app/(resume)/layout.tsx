@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "~/components/Header"
 
 import Resume from "@/images/RESUME.jpg"
 
@@ -14,11 +13,8 @@ export const metadata = {
 
 export default function ResumeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <Header />
-      <div className="w-full h-[calc(100vh-75px)] transition-all delay-200 mx-auto my-0">
-        {children}
-      </div>
-    </>
+    <div className="w-full h-[calc(100vh-75px)] transition-all delay-200 mx-auto my-0">
+      {children}
+    </div>
   )
 }

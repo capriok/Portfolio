@@ -1,4 +1,5 @@
 import React from "react"
+import Providers from "./providers"
 import "./globals.css"
 
 export const metadata = {
@@ -9,10 +10,12 @@ export const metadata = {
     "JavaScript, TypeScript, React, Nextjs, Frontend Engineer, Frontend Developer, Fullstack Engineer, Fullstack Developer",
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: JSX.Element }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
