@@ -13,7 +13,7 @@ interface Props {
 function ProjectView({ project }: Props) {
   return (
     <>
-      <h1 className="section-title">{project.title}</h1>
+      <h1 className="text-3xl font-bold mt-14 mb-8">{project.title}</h1>
       <Carousel images={project.images} />
       <p className="mb-4 pb-2 border-b">{project.description}</p>
       {project.writing.process && (

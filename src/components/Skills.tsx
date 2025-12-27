@@ -5,7 +5,7 @@ import React, { useState } from "react"
 import {
   SiJavascript,
   SiTypescript,
-  SiCsharp,
+  SiSharp,
   SiPython,
   SiReact,
   SiNextdotjs,
@@ -15,19 +15,17 @@ import {
   SiSocketdotio,
   SiMysql,
   SiGraphql,
-  SiMicrosoftsqlserver,
   SiMongodb,
-  SiAmazonaws,
-  SiMicrosoftazure,
+  SiAmazonwebservices,
   SiGithub,
   SiNetlify,
   SiNpm,
   SiVercel,
   SiTailwindcss,
 } from "react-icons/si"
-import { DiSass, DiPostgresql } from "react-icons/di"
+import { DiSass, DiPostgresql, DiMsqlServer } from "react-icons/di"
 import { RiHtml5Line } from "react-icons/ri"
-import { VscDatabase } from "react-icons/vsc"
+import { VscDatabase, VscAzure } from "react-icons/vsc"
 import { FaJava } from "react-icons/fa"
 
 export default function Skills() {
@@ -65,7 +63,7 @@ export default function Skills() {
 
   return (
     <section className="w-full transition-all duration-200">
-      <h1 className="section-title">Technology</h1>
+      <h1 className="text-3xl font-bold mt-14 mb-8">Technology</h1>
       <div className="mx-[-10px] md:mx-auto md:w-[80%] flex flex-col md:flex-col">
         <div className="tabs w-full flex md:justify-center overflow-x-scroll md:overflow-visible">
           <Tab tab="a" loc="l">
@@ -91,8 +89,8 @@ export default function Skills() {
         </div>
         <div className="w-[80%] mx-auto flex flex-wrap md:flex-nowrap justify-center items-center">
           <Icons t="a">
-            <Skill Icon={SiAmazonaws} name="AWS" />
-            <Skill Icon={SiMicrosoftazure} name="Azure" />
+            <Skill Icon={SiAmazonwebservices} name="AWS" />
+            <Skill Icon={VscAzure} name="Azure" />
             <Skill Icon={SiVercel} name="Vercel" />
             <Skill Icon={SiNetlify} name="Netlify" />
             <Skill Icon={SiGithub} name="Github" />
@@ -101,7 +99,7 @@ export default function Skills() {
           <Icons t="b">
             <Skill Icon={SiJavascript} name="JavaScript" />
             <Skill Icon={SiTypescript} name="TypeScript" />
-            <Skill Icon={SiCsharp} name="C Sharp" />
+            <Skill Icon={SiSharp} name="C Sharp" />
             <Skill Icon={SiPython} name="Python" />
             <Skill Icon={FaJava} name="Java" />
           </Icons>
@@ -122,7 +120,7 @@ export default function Skills() {
           <Icons t="e">
             <Skill Icon={DiPostgresql} name="PostgreSQL" />
             <Skill Icon={SiMysql} name="MySQL" />
-            <Skill Icon={SiMicrosoftsqlserver} name="SQL Server" />
+            <Skill Icon={DiMsqlServer} name="SQL Server" />
             <Skill Icon={SiMongodb} name="Mongo DB" />
             <Skill Icon={VscDatabase} name="NoSQL" />
           </Icons>

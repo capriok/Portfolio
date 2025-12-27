@@ -13,13 +13,13 @@ interface Props {
 
 export default function Carousel({ images }: Props) {
   const [viewState, setView] = useState<ViewState>({ open: false, image: 0 })
-  let ref: any = useRef()
+  const ref = useRef<AliceCarousel | null>(null)
 
   let isMobile
   if (typeof window !== `undefined`) {
     isMobile = window.innerWidth < 500
   }
-  const handleOnDragStart = (e) => e.preventDefault()
+  const handleOnDragStart = (e: React.DragEvent) => e.preventDefault()
   const responsive = { 0: { items: 1 }, 1024: { items: 2 } }
 
   return (
@@ -27,7 +27,7 @@ export default function Carousel({ images }: Props) {
       <FullView images={images} view={viewState} set={setView} />
       <div className=" w-full flex flex-col justify-center items-center">
         <AliceCarousel
-          ref={(el) => (ref = el)}
+          ref={ref}
           mouseTracking={isMobile ? true : false}
           infinite={true}
           responsive={responsive}
@@ -56,13 +56,13 @@ export default function Carousel({ images }: Props) {
         <div className="flex gap-2 my-4">
           <button
             className="btn gradient-hover bg-primary mb-4 py-2"
-            onClick={() => ref.slidePrev()}
+            onClick={() => ref.current?.slidePrev()}
           >
             <MdChevronLeft className="icon" />
           </button>
           <button
             className="btn gradient-hover bg-primary mb-4 py-2"
-            onClick={() => ref.slideNext()}
+            onClick={() => ref.current?.slideNext()}
           >
             <MdChevronRight className="icon" />
           </button>

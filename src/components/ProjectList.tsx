@@ -15,7 +15,7 @@ export default function ProjectList({ projects, paginated }: Props) {
 
   return (
     <>
-      <h1 className="section-title">Project Collection</h1>
+      <h1 className="text-3xl font-bold mt-14 mb-8">Project Collection</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-6">
         {projects.slice(0, paginated ? pg : projects.length).map((project, i) => (
           <ProjectCard key={i} project={project} />

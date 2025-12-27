@@ -4,7 +4,7 @@ import projects from "@/json/projects.json"
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
-    slug: project.slug,
+    project: project.slug,
   }))
 }
 
@@ -20,15 +20,15 @@ export async function generateMetadata({ params }) {
   }
 }
 
-function ProjectTemplate({ params }: { params: { project: string } }) {
-  const projects = getProjects(true)
-  const project = projects.find((p) => p.slug === params.project)!
 
+export default async function ProjectTemplate({ params }: { params: Promise<{ project: string }> }) {
+  const { project: projectSlug } = await params;
+  const projects = getProjects(true);
+  const project = projects.find((p) => p.slug === projectSlug)!;
   return (
     <>
       <ProjectView project={project} />
     </>
-  )
+  );
 }
 
-export default ProjectTemplate

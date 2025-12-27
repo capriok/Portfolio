@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap");
+
+
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(0, 0%, 100%);
+  --color-primary: hsl(0, 0%, 96%);
+  --color-secondary: hsl(0, 0%, 94%);
+  --color-foreground: hsl(0, 0%, 0%);
+  --color-border: hsl(0, 0%, 85%);
+}
 
 @import "./components.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --background: hsl(0, 0%, 100%);
