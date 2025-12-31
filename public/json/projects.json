@@ -2,7 +2,7 @@
   {
     "title": "Codings",
     "slug": "codings",
-    "description": "Codings - A typing game that helps you improve coding speed and accuracy while challenging experienced developers.",
+    "description": "A typing game that helps you improve coding speed and accuracy while challenging experienced developers.",
     "writing": {
       "process": "Codings is inspired by typings.gg, a popular typing website that focuses on improving typing speed and accuracy through various typing tests and games.",
       "processSub": " I wanted to create a similar experience but with a focus on coding specifically. The idea is to help developers improve their typing skills while also familiarizing themselves with common coding syntax and patterns.",
@@ -28,7 +28,7 @@
   {
     "title": "Pepiti Stats",
     "slug": "pepiti",
-    "description": "Pepiti Stats - Access race stats, host and join leagues, connect with friends, and compete with rivals through global leaderboards",
+    "description": "Access race stats, host and join leagues, connect with friends, and compete with rivals through global leaderboards",
     "writing": {
       "process": "We are a community of racing and statistic enthusiasts",
       "processSub": "Access race stats in real-time, host and join leagues, connect with fellow races through social integrations, and compete with rivals through global leaderboards",
