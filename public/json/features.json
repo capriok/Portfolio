@@ -2,11 +2,18 @@
   {
     "title": "Codings",
     "slug": "codings",
-    "description": "Codings - Codings is a typing game that helps you improve your coding speed and accuracy.",
-    "tags": ["Nextjs", "Shadcn/ui", "Tailwindcss", "2025"],
+    "description": "Codings - A typing game that helps you improve coding speed and accuracy while challenging experienced developers.",
+    "tags": ["Nextjs", "Shadcn/ui", "Opus 4.5", "2025"],
     "source": "https://github.com/capriok/codings",
     "demo": "https://codings.kylecaprio.dev/",
-    "thumb": "/images/CODINGS-SHOWCASE.jpg"
+    "thumb": "/images/CODINGS-SHOWCASE.jpg",
+    "images": [
+      "/images/CODINGS-SHOWCASE.jpg",
+      "/images/CODINGS-HOME.jpg",
+      "/images/CODINGS-TYPING.jpg",
+      "/images/CODINGS-RESULTS.jpg"
+    ],
+    "resources": ["https://typings.gg", "https://nextjs.org", "https://ui.shadcn.com"]
   },
   {
     "title": "Sweetie",

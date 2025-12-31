@@ -2,14 +2,18 @@
   {
     "title": "Codings",
     "slug": "codings",
-    "description": "Codings - Codings is a typing game that helps you improve your coding speed and accuracy.",
+    "description": "Codings - A typing game that helps you improve coding speed and accuracy while challenging experienced developers.",
     "writing": {
-      "process": "",
-      "processSub": "",
-      "conclusion": [""]
+      "process": "Codings is inspired by typings.gg, a popular typing website that focuses on improving typing speed and accuracy through various typing tests and games.",
+      "processSub": " I wanted to create a similar experience but with a focus on coding specifically. The idea is to help developers improve their typing skills while also familiarizing themselves with common coding syntax and patterns.",
+      "conclusion": [
+        "Exercised prompt engineering skills to deliver this in half a day",
+        "Improved skills engineering code that is complex yet performant",
+        "Built with bleeding edge Nextjs App Router technologies"
+      ]
     },
-    "stack": ["TypeScript", "Nextjs", "Tailwindcss", "Vercel"],
-    "tags": ["Nextjs", "Shadcn/ui", "Tailwindcss", "2023"],
+    "stack": ["Cursor", "TypeScript", "Nextjs", "Vercel"],
+    "tags": ["Nextjs", "Shadcn/ui", "2025"],
     "source": "https://github.com/capriok/codings",
     "demo": "https://codings.kylecaprio.dev/",
     "thumb": "/images/CODINGS-SHOWCASE.jpg",
