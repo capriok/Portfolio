@@ -1,5 +1,14 @@
 [
   {
+    "title": "Codings",
+    "slug": "codings",
+    "description": "Codings - Codings is a typing game that helps you improve your coding speed and accuracy.",
+    "tags": ["Nextjs", "Shadcn/ui", "Tailwindcss", "2025"],
+    "source": "https://github.com/capriok/codings",
+    "demo": "https://codings.kylecaprio.dev/",
+    "thumb": "/images/CODINGS-SHOWCASE.jpg"
+  },
+  {
     "title": "Sweetie",
     "slug": "sweetie",
     "description": "A personal home dashboard hosted on a Raspberry Pi featuring a calendar, weather stats, lists, and various schedules",
@@ -16,14 +25,5 @@
     "source": "https://github.com/capriok/pepiti-stats",
     "demo": "https://pepiti.com/",
     "thumb": "/images/PEPITI-SHOWCASE.jpg"
-  },
-  {
-    "title": "CSAR",
-    "slug": "csar",
-    "description": "Ingalls - Cyber Security Assurance Readiness, a SBIR contracted process for Lightweight Simulator Ecosystem (LSE) used by the DoD and Air Force",
-    "tags": ["TypeScript", "React", "GraphQL", "2023"],
-    "source": "https://iinfosec.com/government-programs/",
-    "demo": "https://iinfosec.com/cybersecurity-assurance-readiness-csar/",
-    "thumb": "/images/CSAR-SHOWCASE.jpg"
   }
 ]

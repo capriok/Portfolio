@@ -1,5 +1,27 @@
 [
   {
+    "title": "Codings",
+    "slug": "codings",
+    "description": "Codings - Codings is a typing game that helps you improve your coding speed and accuracy.",
+    "writing": {
+      "process": "",
+      "processSub": "",
+      "conclusion": [""]
+    },
+    "stack": ["TypeScript", "Nextjs", "Tailwindcss", "Vercel"],
+    "tags": ["Nextjs", "Shadcn/ui", "Tailwindcss", "2023"],
+    "source": "https://github.com/capriok/codings",
+    "demo": "https://codings.kylecaprio.dev/",
+    "thumb": "/images/CODINGS-SHOWCASE.jpg",
+    "images": [
+      "/images/CODINGS-SHOWCASE.jpg",
+      "/images/CODINGS-HOME.jpg",
+      "/images/CODINGS-TYPING.jpg",
+      "/images/CODINGS-RESULTS.jpg"
+    ],
+    "resources": ["https://typings.gg", "https://nextjs.org", "https://ui.shadcn.com"]
+  },
+  {
     "title": "Pepiti Stats",
     "slug": "pepiti",
     "description": "Pepiti Stats - Access race stats, host and join leagues, connect with friends, and compete with rivals through global leaderboards",
